@@ -40,12 +40,12 @@ require_once("script/function.js");
 	$user_engineer = $_REQUEST["user_engineer"]; 		
         ?>
         <form action="edit_serial_retail.excute.php"  method="post"  name="form1" id="form1"  >
-        <input type="hidden" value="<?=$site_id?>" name="site_id" id="site_id">         
+        <input class="form-control"  type="hidden" value="<?=$site_id?>" name="site_id" id="site_id">         
         
         <table align="center" bordercolor="#000000" cellpadding="0" cellspacing="0"  class="mytable" id="table7" border="0" width="100%">       
                     <tr>
                         <td width="95%">&nbsp;</td>
-                        <td><input name="Submit"  type="image" onClick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
+                        <td><input class="form-control"  name="Submit"  type="image" onClick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
                        <td align="left"><b>บันทึก</b>    </td>
                        <td><a href="javascript:window.close()" ><img src="image/cancel.jpg" alt="Cancel" width="20" height="18" border="0" align="left" /> </a> </td>
                        <td align="left"><nobr><b> ยกเลิก</b>     </td>
@@ -80,7 +80,7 @@ $sql_select = "SELECT
 					<option value="<?=$c['cate_id'];?>" ><?=$c['cate_name'];?></option>			
 				</select>
 			  </td>
-			<td width="30%" align="center"><input type="text" value="<?=$c["hardware_no"]?>" ></td>
+			<td width="30%" align="center"><input class="form-control"  type="text" value="<?=$c["hardware_no"]?>" ></td>
                         		<td width="30%" align="center"><select name="sn_new" id="sn_new"  style="width:150pt" >
 					<?
 						$sql_sn = "SELECT

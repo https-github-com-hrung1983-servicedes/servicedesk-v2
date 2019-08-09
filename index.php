@@ -51,12 +51,12 @@ exit;
       <tr>
         <td align="right" class="fonttitle_board">UserName:</td>
         <td>&nbsp;</td>
-        <td><input class="form-control"  size=26 type=text name="username" maxlength=30 class=violet></td>
+        <td><input class="form-control"  class="form-control"  size=26 type=text name="username" maxlength=30 class=violet></td>
       </tr>      
       <tr>
         <td width="38%" align="right" class="fonttitle_board">PassWord:</td>
         <td width="3%">&nbsp;</td>
-        <td width="59%"><input class="form-control"  size=26 type=password name="password" maxlength=30 class=violet></td>
+        <td width="59%"><input class="form-control"  class="form-control"  size=26 type=password name="password" maxlength=30 class=violet></td>
       </tr>
     </table></td>
   </tr>
@@ -65,9 +65,9 @@ exit;
   </tr>
   <tr>
     <td align="center"><b>
-	<input type="hidden" name="link" id="link" value="<?=$_REQUEST["link"]?>">
-      <input class="btn btn-success"  type=submit value="Login" name="submit" style="width:60pt;">
-      <input class="btn btn-secondary" type=reset value="Reset" name="reset" style="width:60pt;">
+	<input class="form-control"  type="hidden" name="link" id="link" value="<?=$_REQUEST["link"]?>">
+      <input class="form-control"  class="btn btn-success"  type=submit value="Login" name="submit" style="width:60pt;">
+      <input class="form-control"  class="btn btn-secondary" type=reset value="Reset" name="reset" style="width:60pt;">
     </b></td>
   </tr>
 </table>

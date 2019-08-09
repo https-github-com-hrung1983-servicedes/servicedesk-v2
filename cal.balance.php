@@ -33,8 +33,8 @@
 	</tr>
 	<tr>
 		<td>Balance : </td>
-		<td><input type="text" name="moneybalance" id="moneybalance" onblur="return checkvalue()"  value="<?= $_REQUEST["moneybalance"]?>" />$$$
-		<input type="submit" name="subCal" value="Calculate"  /></td>
+		<td><input class="form-control"  type="text" name="moneybalance" id="moneybalance" onblur="return checkvalue()"  value="<?= $_REQUEST["moneybalance"]?>" />$$$
+		<input class="form-control"  type="submit" name="subCal" value="Calculate"  /></td>
 	</tr>
 </table>
 </form>

@@ -24,21 +24,21 @@ exit();
 
 <body>
 <form action="" method="post" enctype="multipart/form-data" name="bigchernForm">
-  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-  <input type="submit" name="bigchern" value="bigchern submit">
-  <input type="hidden" name="event" value="upload">
+  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+  <input class="form-control"  type="submit" name="bigchern" value="bigchern submit">
+  <input class="form-control"  type="hidden" name="event" value="upload">
 </form>
  
  

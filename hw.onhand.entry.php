@@ -88,8 +88,8 @@ $sql = "SELECT
     <tr>
         <td valign="top" align="center">
             <form action=".execute.php"  method="post"  name="form1" id="form1"  >
-			<input  type="hidden" value="<?=$id?>" name="id_sn" id="id_sn" />
-			<input  type="hidden" value="<?=$_SESSION["User_id"];?>" name="user_id" id="user_id" />
+			<input class="form-control"   type="hidden" value="<?=$id?>" name="id_sn" id="id_sn" />
+			<input class="form-control"   type="hidden" value="<?=$_SESSION["User_id"];?>" name="user_id" id="user_id" />
                 <table border="0" cellpadding="0" cellspacing="0" class="mytable" border="1"  bordercolor="#FF0000">
                     <tr>
                         <th align="center" height="40" colspan="3" class="th">Hardware on hand</th>
@@ -97,13 +97,13 @@ $sql = "SELECT
 
                     <tr>
                         <td bgcolor="white" width="95%" align="right" colspan="2" >
-						<input name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
+						<input class="form-control"  name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
                        <td align="left" bgcolor="white" width="10%"><b>Save</b>    </td>
                      </tr>
 					 <tr>
                       <td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Category Hardware  :  </td>
                       <td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  <select name="cate_id" id="cate_id" style="width:250pt" >
+					  <select class="form-control" name="cate_id" id="cate_id" style="width:250pt" >
 					  			<option value="<?=$cate_id?>"><?=$c["cate_name"]?></option>
 					  </select>
 						</td>
@@ -111,31 +111,31 @@ $sql = "SELECT
 					<tr>
                       <td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Serial No.  :  </td>
                       <td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  		<input type="text" name="serialno" id="serialno" style="width:250pt" value="<?=$c["hardware_no"]?>" readonly>
+					  		<input class="form-control"  type="text" name="serialno" id="serialno" style="width:250pt" value="<?=$c["hardware_no"]?>" readonly>
 						</td>
 						</tr>
 						<tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Form Stock  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  			<input type="text" name="dte_tme_form_stock" id="dte_tme_form_stock" readonly="readonly" value="<?=$c["dte_tme_form_stock"]?>" style="width:250pt"  >
+					  			<input class="form-control"  type="text" name="dte_tme_form_stock" id="dte_tme_form_stock" readonly="readonly" value="<?=$c["dte_tme_form_stock"]?>" style="width:250pt"  >
 						</td>
                     </tr>
 					<tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Form Site  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  			<input type="text" name="dte_tme_form_pump" id="dte_tme_form_pump" readonly="readonly" value="<?=$c["dte_tme_form_pump"]?>" style="width:250pt"  >
+					  			<input class="form-control"  type="text" name="dte_tme_form_pump" id="dte_tme_form_pump" readonly="readonly" value="<?=$c["dte_tme_form_pump"]?>" style="width:250pt"  >
 						</td>
                     </tr>
 					<tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Enter Stock  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  			<input type="text" name="dte_tme_entry_stock" id="dte_tme_entry_stock" readonly="readonly" value="<?=getDtetme();?>" style="width:250pt"  >
+					  			<input class="form-control"  type="text" name="dte_tme_entry_stock" id="dte_tme_entry_stock" readonly="readonly" value="<?=getDtetme();?>" style="width:250pt"  >
 								</td>
                     </tr>
 					<tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Status  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  			<select name="status_hw2" id="status_hw2"  style="width:250pt"  >
+					  			<select class="form-control" name="status_hw2" id="status_hw2"  style="width:250pt"  >
 										<option value="o" selected="selected">On hand</option>
 										<option value="r" >Repair</option>
 										<option value="a" >Active</option>
@@ -161,7 +161,7 @@ $sql = "SELECT
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;<nobr>Transfer H/W to  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
 					
-					  			<select name="user_new2" id="user_new2"  style="width:250pt"  >
+					  			<select class="form-control" name="user_new2" id="user_new2"  style="width:250pt"  >
 								<? if($_SESSION["Ustate"]=="admin"){
 									$sql_user = "select  user_id,name,sname from tbl_user where at in ('".$_SESSION['Uat']."') and status_user = 'y' and user_id not in ('66','72','76','85','86','94','99','136')  order by name";
 									$rs_user = mysqli_query($conn,$sql_user);
@@ -187,7 +187,7 @@ $sql = "SELECT
                     </tr>
 					<? /* tr><td height="25" width="30%" bgcolor="white" width="30%" align="left" class="fontBblue">SparePart For : </td>
 					    <td height="25" width="70%" bgcolor="white" width="30%" align="left" class="fontBblue" colspan="2">
-						<select name="sparepartfor" id="sparepartfor"   style="width:250pt"  >
+						<select class="form-control" name="sparepartfor" id="sparepartfor"   style="width:250pt"  >
 						<? $sql_sparepartfor = "SELECT customer_id,customer_name FROM tbl_customer Order by customer_name";
 						   $rs_sparepartfor = mysql_query($sql_sparepartfor);
 						   while($c_sparepartfor = mysql_fetch_array($rs_sparepartfor)){

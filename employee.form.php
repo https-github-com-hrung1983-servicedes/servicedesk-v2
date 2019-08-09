@@ -105,8 +105,8 @@ $(document).ready(function(){
     <tr>
         <td valign="top" align="center"> 
             <form method="post" name="form1" id="form1"> 
-				<input type="hidden" name="id" id="id"  style="width:180pt;" value="<?=$id;?>">
-				<input type="hidden" name="type" id="type"  style="width:180pt;" value="<?=$type?>">
+				<input class="form-control"  type="hidden" name="id" id="id"  style="width:180pt;" value="<?=$id;?>">
+				<input class="form-control"  type="hidden" name="type" id="type"  style="width:180pt;" value="<?=$type?>">
 			
                    <table width="100%" align="center" border="0"  cellpadding="0" cellspacing="0" class="mytable">
 				   <tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){
 					   <td bgcolor="white" width="95%" >&nbsp;
 					   <?if($type=="edit"){?>
 						   <a lang="userlogin.form.php?type=<?=$type_;?>&id=<?=$c["id_login"];?>&id_user=<?=$id?>" class="thickbox pointer" id="stay.bill">
-						   <input name="button" id="login_img" name="login_img"  type="image" src="image/security.png" alt="security" align="right" width="20" height="20" />    </td>
+						   <input class="form-control"  name="button" id="login_img" name="login_img"  type="image" src="image/security.png" alt="security" align="right" width="20" height="20" />    </td>
 						   </a>						
 					   <td align="left" bgcolor="white" width="10%"><nobr><b><p>สร้าง Login</p></b>    <?}?></td>
                        <td bgcolor="white" ><img id="Save" name="Save" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
@@ -138,17 +138,17 @@ $(document).ready(function(){
                      <tr>			 
                         <td height="20" width="30%" align="left" class="fontBblue" >Name : </td> 
                         <td height="20" width="70%" align="left" class="fontBblue" >
-						<input type="text" name="name" id="name"  style="width:180pt;" value="<?=$c["name"];?>"></td>   
+						<input class="form-control"  type="text" name="name" id="name"  style="width:180pt;" value="<?=$c["name"];?>"></td>   
                     </tr >   
                      <tr>			 
                         <td height="20" width="30%" align="left" class="fontBblue" >Surname : </td> 
                         <td height="20" width="70%" align="left" class="fontBblue" >
-						<input type="text" name="sname" id="sname" value="<?=$c["sname"]?>"  style="width:180pt;"></td>   
+						<input class="form-control"  type="text" name="sname" id="sname" value="<?=$c["sname"]?>"  style="width:180pt;"></td>   
                     </tr > 
                      <tr>			 
                         <td height="20" width="30%" align="left" class="fontBblue" >Tel. : </td> 
                         <td height="20" width="70%" align="left" class="fontBblue" >
-						<input type="text" name="tel" id="tel" value="<?=$c["tel"]?>"  style="width:180pt;"></td>   
+						<input class="form-control"  type="text" name="tel" id="tel" value="<?=$c["tel"]?>"  style="width:180pt;"></td>   
                     </tr >  
                      <tr>			 
                         <td height="20" width="30%" align="left" class="fontBblue" >Status : </td> 

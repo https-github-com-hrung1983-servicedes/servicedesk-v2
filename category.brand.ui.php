@@ -53,18 +53,18 @@ require_once("header.php");
         <td valign="top" align="center">
             <form action="category.brand.execute.php"  method="post"  name="form1" id="form1"  >
 
-			<input  type="hidden" value="<?php echo $id?>" name="id" id="id" />
+			<input class="form-control"   type="hidden" value="<?php echo $id?>" name="id" id="id" />
                 <table border="0" cellpadding="0" cellspacing="0" class="mytable" border="1"  bordercolor="#FF0000">
 
                     <tr>
                         <td bgcolor="white" width="95%" align="right" colspan="2" >
-						<input name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
+						<input class="form-control"  name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
                        <td align="left" bgcolor="white" width="10%"><b>Save</b>    </td>
                      </tr>
 					 <tr>
                       <td height="25" bgcolor="white" width="30%" align="right" class="fontBblue" >&nbsp;&nbsp;<nobr>Category Description  :  &nbsp;&nbsp;</td>
                       <td height="25" bgcolor="white" width="70%" align="left" class="fontBblue"> 
-                        <input type="text" value="<?php echo $c["brand_name"];?>" id="catedesc" name="catedesc"  style="width:350pt" colspan="2">
+                        <input class="form-control"  type="text" value="<?php echo $c["brand_name"];?>" id="catedesc" name="catedesc"  style="width:350pt" colspan="2">
                       </td>
                     </tr>
 					<tr>

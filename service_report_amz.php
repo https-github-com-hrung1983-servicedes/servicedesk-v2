@@ -125,7 +125,7 @@ Job Type  :</b>
                             </select>
 
 
-                            &nbsp;<input  type="button" name="sch" value="Search"  onclick="Search_Click(months.value,years.value,job.value)" style="width:50pt;">
+                            &nbsp;<input class="form-control"   type="button" name="sch" value="Search"  onclick="Search_Click(months.value,years.value,job.value)" style="width:50pt;">
 
 <script type="text/javascript"> 
 $(document).ready(function(){  

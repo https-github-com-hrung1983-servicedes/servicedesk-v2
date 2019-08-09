@@ -111,8 +111,8 @@ $sql_cate = "select cate_id,cate_name  from tbl_category_hardware  where cate_id
 					  		<option value="<?=$c_cate["cate_id"]?>"  <? if($c_cate["cate_id"]=="$cate_id") echo "selected";?>>    <?=$c_cate["cate_name"]?>    </option>
 					<? } ?>
 					  </select> &nbsp;
-					  Search S/N : <input type="text" name="shctxt" id="shctxt" style="width:150pt" value="<?=$txt?>" />
-					  <input type="button" value="Search" id="bntsch" name="bntsch" onclick="Search_Click(cate_id.value,shctxt.value)" />
+					  Search S/N : <input class="form-control"  type="text" name="shctxt" id="shctxt" style="width:150pt" value="<?=$txt?>" />
+					  <input class="form-control"  type="button" value="Search" id="bntsch" name="bntsch" onclick="Search_Click(cate_id.value,shctxt.value)" />
 						</td>
 <?if($_SESSION['Uat'] ==  "BSS"){?>
 					   <td>

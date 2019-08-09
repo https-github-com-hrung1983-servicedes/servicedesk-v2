@@ -67,8 +67,8 @@ $c_cnt_status = mysqli_fetch_array($sql_cnt_status);
                     <tr>
                         <td width="879" valign="middle" align="center">        
                             <span class="fonttitle_board">&nbsp;วันที่ :</span>      
-                            <input style="width:75pt;" name="date_beg"  type="text" onclick="cdp1.showCalendar(this, 'date_beg');return false;" id="date_beg" value="<?=$other_date;?>" size="35" maxlength="10" />                       
-                            &nbsp;<input  type="button" name="sch" value="ค้นหา"  onclick="Search_Click(typer.value,state.value,schBy.value,schTxt.value,date_beg.value,date_end.value)"style="width:50pt;">
+                            <input class="form-control"  style="width:75pt;" name="date_beg"  type="text" onclick="cdp1.showCalendar(this, 'date_beg');return false;" id="date_beg" value="<?=$other_date;?>" size="35" maxlength="10" />                       
+                            &nbsp;<input class="form-control"   type="button" name="sch" value="ค้นหา"  onclick="Search_Click(typer.value,state.value,schBy.value,schTxt.value,date_beg.value,date_end.value)"style="width:50pt;">
                         </td>
                         <td width="18" valign="middle">&nbsp;
 						<? if($c_cnt_status["cnt"] == 0 ){?>

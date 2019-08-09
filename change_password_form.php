@@ -37,7 +37,7 @@ if(!checkUser()){    echo Message(35,"red",$titel1,$msg1,"<a href='index.php?lin
                     
                     <tr>
                            <td width="95%" colspan="2">&nbsp;</td>
-                        <td><input name="Submit"  type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
+                        <td><input class="form-control"  name="Submit"  type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
                        <td align="left"><b>บันทึก</b>    </td>
                        <td><a href="index1.php" target="mainPage" ><img src="image/cancel.jpg" alt="Cancel" width="20" height="18" border="0" align="left" /> </a> </td>
                        <td align="left"><nobr><b> ยกเลิก</b>     </td>
@@ -48,19 +48,19 @@ if(!checkUser()){    echo Message(35,"red",$titel1,$msg1,"<a href='index.php?lin
                    <tr>
                       <td width="10%" height="20" align="left" class="fontBblue" >รหัสผ่านเดิม :  </td>  
                       <td width="20%" align="left" class="fontBblue">                
-                      <input type="hidden" name="txtOld1" id="txtOld1" value="<? echo $_SESSION["Upassword"];?>" style="width:226pt" />
-                      <input type="password" name="txtOld2" id="txtOld2" value="" style="width:226pt" />
+                      <input class="form-control"  type="hidden" name="txtOld1" id="txtOld1" value="<? echo $_SESSION["Upassword"];?>" style="width:226pt" />
+                      <input class="form-control"  type="password" name="txtOld2" id="txtOld2" value="" style="width:226pt" />
                       </td>    
                   </tr >
                     
                     <tr>
                       <td height="10%" align="left" class="fontBblue" ><nobr>รหัสผ่านใหม่ :</td>
-                      <td height="20%" align="left" class="fontBblue"> <input type="password" name="txtNew1" id="txtNew1" value="" style="width:226pt" /></td>
+                      <td height="20%" align="left" class="fontBblue"> <input class="form-control"  type="password" name="txtNew1" id="txtNew1" value="" style="width:226pt" /></td>
                     </tr>
                     
                     <tr>
                       <td height="10%" align="left" class="fontBblue" ><nobr>ยืนยันรหัสผ่านใหม่  :</td>
-                      <td height="20%" align="left" class="fontBblue"><input type="password" name="txtNew2" id="txtNew2" value="" style="width:226pt" /></td> 
+                      <td height="20%" align="left" class="fontBblue"><input class="form-control"  type="password" name="txtNew2" id="txtNew2" value="" style="width:226pt" /></td> 
                     </tr>                    
                     
                 </table>

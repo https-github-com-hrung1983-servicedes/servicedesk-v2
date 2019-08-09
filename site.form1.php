@@ -86,7 +86,7 @@ $(document).ready(function(){
                         <img src="image/gear_replace.gif" alt="Save" align="right" width="20" height="20" /></td><?}?>
                         <td><b><nobr>Serial No (PTT.)</b></td>
                         <td>&nbsp;</td>
-                        <td><input name="Save"  id="Save" type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
+                        <td><input class="form-control"  name="Save"  id="Save" type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
                        <td align="left"><b>Save</b>    </td>
                        <td><a href="javascript:history.back(1)" target="mainPage" ><img src="image/cancel.jpg" alt="Cancel" width="20" height="18" border="0" align="left" /> </a> </td>
                        <td align="left"><nobr><b>Cancel</b>     </td>
@@ -97,32 +97,32 @@ $(document).ready(function(){
                    <tr>
                       <td width="18%" height="20" align="left" class="fontBblue" >Site ID :  </td>  
                       <td align="left" class="fontBblue">                  
-					  <input type="hidden" name="typer" id="typer" style="width:130pt;" value="<?=$type?>">
-					  <input type="hidden" name="txt" id="txt" style="width:130pt;" value="<?=$txt?>">
-                      <input type="text" name="site_id" id="site_id" style="width:130pt;" <?=$readonly?>  value="<?=$c["site_id"]?>"></td>                       
+					  <input class="form-control"  type="hidden" name="typer" id="typer" style="width:130pt;" value="<?=$type?>">
+					  <input class="form-control"  type="hidden" name="txt" id="txt" style="width:130pt;" value="<?=$txt?>">
+                      <input class="form-control"  type="text" name="site_id" id="site_id" style="width:130pt;" <?=$readonly?>  value="<?=$c["site_id"]?>"></td>                       
                   </tr >
                     
                     <tr>                               
                       <td height="25%" align="left" class="fontBblue" ><nobr>Name(old) :</td>
-                      <td height="25%" align="left" class="fontBblue"> <input type="text" name="site_old_name" id="site_old_name" value="<?=$c["site_old_name"];?>" style="width:300pt" /></td><meta http-equiv="Content-Type" content="text/html; charset=windows-874"> 
+                      <td height="25%" align="left" class="fontBblue"> <input class="form-control"  type="text" name="site_old_name" id="site_old_name" value="<?=$c["site_old_name"];?>" style="width:300pt" /></td><meta http-equiv="Content-Type" content="text/html; charset=windows-874"> 
                    </tr>
                                                   
                    <tr> 
                       <td height="25%" align="left" class="fontBblue"><nobr>Name(New):</td>
-                      <td height="25%" align="left" class="fontBblue" colspan="5"><input type="text" name="site_new_name" id="site_new_name" value="<?=$c["site_new_name"];?>"  style="width:300pt" /></td>
+                      <td height="25%" align="left" class="fontBblue" colspan="5"><input class="form-control"  type="text" name="site_new_name" id="site_new_name" value="<?=$c["site_new_name"];?>"  style="width:300pt" /></td>
                     </tr>
                     
                     <tr> 
                       <td height="25%" align="left" class="fontBblue"><nobr>Name :</td>
-                      <td height="25%" align="left" class="fontBblue" colspan="5"><input type="text" name="site_name" id="site_name" value="<?=$c["site_name"];?>"  style="width:300pt" /></td>
+                      <td height="25%" align="left" class="fontBblue" colspan="5"><input class="form-control"  type="text" name="site_name" id="site_name" value="<?=$c["site_name"];?>"  style="width:300pt" /></td>
                     </tr>
                     <tr> 
                       <td height="25%" align="left" class="fontBblue"><nobr>   POS  :</td>
-                      <td height="25%" align="left" class="fontBblue" colspan="5"><input type="text" name="pos" id="pos" value="<?=$c["pos"];?>"  style="width:300pt" /></td>
+                      <td height="25%" align="left" class="fontBblue" colspan="5"><input class="form-control"  type="text" name="pos" id="pos" value="<?=$c["pos"];?>"  style="width:300pt" /></td>
                     </tr>
 					<tr> 
                       <td height="25%" align="left" class="fontBblue"><nobr>   Address  :</td>
-                      <td height="25%" align="left" class="fontBblue" colspan="5"><input type="text" name="address" id="address" value="<?=$c["address"];?>"  style="width:330pt" /></td>
+                      <td height="25%" align="left" class="fontBblue" colspan="5"><input class="form-control"  type="text" name="address" id="address" value="<?=$c["address"];?>"  style="width:330pt" /></td>
                     </tr>
                  <tr>
                       <td height="20" align="left" class="fontBblue"><nobr>Province :</td>
@@ -139,7 +139,7 @@ $(document).ready(function(){
                  </tr>     
 				 <tr>
                       <td height="20" align="left" class="fontBblue"><nobr>Contact  :</td>
-                      <td height="20" align="left" class="fontBblue"><input type="text" name="contact" id="contact" value="<?=$c['contact'];?>"  style="width:200pt" /></td>
+                      <td height="20" align="left" class="fontBblue"><input class="form-control"  type="text" name="contact" id="contact" value="<?=$c['contact'];?>"  style="width:200pt" /></td>
                  </tr>	
 				 <tr>
                       <td height="20" align="left" class="fontBblue"><nobr>Service  :</td>
@@ -157,7 +157,7 @@ $(document).ready(function(){
                  </tr>
 				 <tr>
                       <td height="20" align="left" class="fontBblue"><nobr>Length(Km)  :</td>
-                      <td height="20" align="left" class="fontBblue"><input type="text" name="from_center" id="from_center" value="<?=$c["from_center"];?>"  style="width:200pt" />Km.</td>
+                      <td height="20" align="left" class="fontBblue"><input class="form-control"  type="text" name="from_center" id="from_center" value="<?=$c["from_center"];?>"  style="width:200pt" />Km.</td>
                  </tr>			
                 </table><br><br>
                 <table align="center" class="mytable1" id="table7" cellpadding="1" cellspacing="1"><tr></tr >

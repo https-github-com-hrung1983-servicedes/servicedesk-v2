@@ -66,11 +66,11 @@ order by tbl_hardware_onhand_user.status_pm";// echo $sql;
                           
                             
                             <b><? echo iconv('UTF-8','TIS-620',"รหัสสถานี"); ?></b>      
-                            <input style="width:100pt;" name="sch_text"  type="text"  id="sch_text" value="<?=$sch_text?>" />
+                            <input class="form-control"  style="width:100pt;" name="sch_text"  type="text"  id="sch_text" value="<?=$sch_text?>" />
                              
                             
                             
-                            &nbsp;<input  type="button" name="sch" value="<? echo iconv('UTF-8','TIS-620',"ค้นหาเลขที่ใบงาน"); ?>"  onclick="Search_Click(sch_text.value)"style="width:50pt;">
+                            &nbsp;<input class="form-control"   type="button" name="sch" value="<? echo iconv('UTF-8','TIS-620',"ค้นหาเลขที่ใบงาน"); ?>"  onclick="Search_Click(sch_text.value)"style="width:50pt;">
                            
                         </td>
                         <td width="18" valign="middle"><!--a href="bsslogcall.form.php?type=add" target="_parent">

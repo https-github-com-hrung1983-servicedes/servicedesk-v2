@@ -154,11 +154,11 @@ $(document).ready(function(){
     <tr>
         <td valign="top" align="center">
             <form action="logcall.excute.msi.php"  method="post"  name="form1" id="form1"  >
-            <input type="hidden" value="<?=$id?>" name="id" id = "id">
-            <input type="hidden" value="<?=$c["job_no"];?>" name="job_no_update_bss" id = "job_no_update_bss">
-			      <input type="hidden" value="<?=$type?>" name="mode" id = "mode">
-            <input type="hidden" value="<?=$_REQUEST["dte_beg"]?>" name="dte_beg" id = "dte_beg">
-            <input type="hidden" value="<?=$_REQUEST["dte_end"]?>" name="dte_end" id = "dte_end">
+            <input class="form-control"  type="hidden" value="<?=$id?>" name="id" id = "id">
+            <input class="form-control"  type="hidden" value="<?=$c["job_no"];?>" name="job_no_update_bss" id = "job_no_update_bss">
+			      <input class="form-control"  type="hidden" value="<?=$type?>" name="mode" id = "mode">
+            <input class="form-control"  type="hidden" value="<?=$_REQUEST["dte_beg"]?>" name="dte_beg" id = "dte_beg">
+            <input class="form-control"  type="hidden" value="<?=$_REQUEST["dte_end"]?>" name="dte_end" id = "dte_end">
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="mytable" border="1" bordercolor="#FF0000">
                     <tr>
                         <th align="center" height="40" width="100%" colspan="8" class="th">Log call center</th>
@@ -177,7 +177,7 @@ $(document).ready(function(){
 					   <td><a href="msr_print.php?job_no=<?=$c['job_no']?>" target="_blank"><img src="image/icon_printer.gif" alt="Cancel" width="20" height="18" border="0" align="left" /> </a> </td>
 					   <td align="left"><nobr><b><?=iconv( 'UTF-8', 'TIS-620', "Print(MSR)");?></b>     </td>
 					   <? } ?>
-						<td><input name="Submit"  type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />	</td>
+						<td><input class="form-control"  name="Submit"  type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />	</td>
 					   <td align="left"><b><?=iconv( 'UTF-8', 'TIS-620', "Save");?></b>    </td>
 					   <td><a href="javascript:history.back(1)" ><img src="image/cancel.jpg" alt="Cancel" width="20" height="18" border="0" align="left" /> </a> </td>
 					   <td align="left"><nobr><b><?=iconv( 'UTF-8', 'TIS-620', "Back");?></b>     </td>
@@ -201,7 +201,7 @@ $(document).ready(function(){
 
 						<?}?>
                      </select> &nbsp;
-					 <input type="checkbox" name="doc" id="doc" <?if($c["doc"]=="true") echo "checked";?>  /> Document
+					 <input class="form-control"  type="checkbox" name="doc" id="doc" <?if($c["doc"]=="true") echo "checked";?>  /> Document
 				&nbsp;&nbsp;&nbsp;&nbsp;
 
 
@@ -211,18 +211,18 @@ $(document).ready(function(){
 					<tr>
 					  <td height="25" align="left" class="fontBblue" ><nobr><?=iconv( 'UTF-8', 'TIS-620', "Company :");?></td>
 					  <td height="25" align="left" class="fontBblue">
-                      <input type="text" name="txtCustomerCall" id="txtCustomerCall" value="PTT ICT" style="width:160pt" />
+                      <input class="form-control"  type="text" name="txtCustomerCall" id="txtCustomerCall" value="PTT ICT" style="width:160pt" />
             </td>
 					  <td height="25" align="left" class="fontBblue"><nobr><?=iconv( 'UTF-8', 'TIS-620', "Ref. JobNo. :");?></td>
 					  <td height="25" align="left" class="fontBblue">
-                      <input type="text" name="txtCallerName" id="txtCallerName" value="<?=$c['caller_name'];?>"  style="width:160pt" /></td>
+                      <input class="form-control"  type="text" name="txtCallerName" id="txtCallerName" value="<?=$c['caller_name'];?>"  style="width:160pt" /></td>
 					</tr>
 
                     <tr>
                       <td height="25" align="left" class="fontBblue" ><nobr><?=iconv( 'UTF-8', 'TIS-620', "Category Job :");?></td>
                       <td height="25" align="left" class="fontBblue" colspan="4" ><nobr>
-                        <input name="CateTypeID" id="CateTypeID" type="hidden" value="<?=$c['category_type'];?>">
-                        <input name="cmbCateType" type="text" id="cmbCateType" value="<?=$c['fixed_description'];?>"  style="width:552pt"  readonly/>
+                        <input class="form-control"  name="CateTypeID" id="CateTypeID" type="hidden" value="<?=$c['category_type'];?>">
+                        <input class="form-control"  name="cmbCateType" type="text" id="cmbCateType" value="<?=$c['fixed_description'];?>"  style="width:552pt"  readonly/>
 
                       <a href="javascript:getCategoryType('CateTypeID','cmbCateType')">
                       <img src="image/search.gif" width="26" height="22" border="0" align="top"   style=" <?= $xvisible ?> "/></a>
@@ -234,28 +234,28 @@ $(document).ready(function(){
                     <tr>
                       <td height="25" align="left" class="fontBblue"><nobr><?=iconv( 'UTF-8', 'TIS-620', "Job No. :");?></td>
 
-                      <td height="25" align="left" class="fontBblue"><input type="text" name="txtJobNo" id="txtJobNo" value="<?=$c["job_no"];?>"  style="width:160pt" <? if($type=="edit"){ echo "readonly";  }?>/>
+                      <td height="25" align="left" class="fontBblue"><input class="form-control"  type="text" name="txtJobNo" id="txtJobNo" value="<?=$c["job_no"];?>"  style="width:160pt" <? if($type=="edit"){ echo "readonly";  }?>/>
 					 <? if($type=="add"){?>
-							<input type="checkbox" id="GenNo" name="GenNo"> Generate BSS. No.
+							<input class="form-control"  type="checkbox" id="GenNo" name="GenNo"> Generate BSS. No.
 					 <?}?>
 					  </td>
                       <td height="25" align="left" class="fontBblue"><nobr><?=iconv( 'UTF-8', 'TIS-620', "Job No.(MSR):");?></td>
-                      <td height="25" align="left" class="fontBblue"><input type="text" name="txtBSSMSRNo" value="<?=$c['bss_msr_no'];?>" id="txtBSSMSRNo"  style="width:160pt" /></td>
+                      <td height="25" align="left" class="fontBblue"><input class="form-control"  type="text" name="txtBSSMSRNo" value="<?=$c['bss_msr_no'];?>" id="txtBSSMSRNo"  style="width:160pt" /></td>
                     </tr>
 
                     <tr>
                       <td height="25" align="left" class="fontBblue" ><?=iconv( 'UTF-8', 'TIS-620', "Site ID :");?></td>
                       <td height="25" align="left" class="fontBblue" colspan="4"><nobr>
-                        <input name="txtSid" type="text" id="txtSid" style="width:160pt" value="<?=$c["site_id"];//S000128?>" />
+                        <input class="form-control"  name="txtSid" type="text" id="txtSid" style="width:160pt" value="<?=$c["site_id"];//S000128?>" />
                       <a href="javascript:getSite('txtSid')"><img src="image/search.gif" width="26" height="22" border="0" align="top" /></a>
                       <? /*input type="text" value="<?=getSiteName($c["call_type"],$c["site_id"])?>" name="txtSid_name" id="txtSid_name" style="width:390pt" readonly  /*/?>
-                      <input type="text" value="<?=$c['site_name']?>" name="txtSid_name" id="txtSid_name" style="width:390pt" readonly  />
+                      <input class="form-control"  type="text" value="<?=$c['site_name']?>" name="txtSid_name" id="txtSid_name" style="width:390pt" readonly  />
                     </tr>
 
                     <tr>
                         <td height="25" align="left" class="fontBblue" ><?=iconv( 'UTF-8', 'TIS-620', "Province :");?></td>
                         <td height="25" align="left" class="fontBblue">
-                        <input type="text" name="txtSidProvince" value="<?=$c['site_province'];?>" id="txtSidProvince"  style="width:160pt" />&nbsp;
+                        <input class="form-control"  type="text" name="txtSidProvince" value="<?=$c['site_province'];?>" id="txtSidProvince"  style="width:160pt" />&nbsp;
                           <select name="province_phase" id="province_phase" style="width:120pt">
 <?
 	$sql_phase = "select * from tbl_phase order by phase_id";
@@ -266,16 +266,16 @@ $(document).ready(function(){
 <? }?>
                       </td>
                       <td align="left" class="fontBblue"><?=iconv( 'UTF-8', 'TIS-620', "Site Note :");?></td>
-                      <td align="left" class="fontBblue" colspan="2"><input type="text" name="way_length" id="way_length" readonly="readonly" style="width:160pt;direction:rtl;" value="<?=getWayLang($c["site_id"]);?>">
+                      <td align="left" class="fontBblue" colspan="2"><input class="form-control"  type="text" name="way_length" id="way_length" readonly="readonly" style="width:160pt;direction:rtl;" value="<?=getWayLang($c["site_id"]);?>">
                       </td>
                    </tr>
 
                     <tr>
                       <td height="25" align="left" class="fontBblue" ><nobr><?=iconv( 'UTF-8', 'TIS-620', "Contact :");?></td>
                       <td height="25" align="left" class="fontBblue"><nobr>
-                      <input name="txtContactName" type="text" id="txtContactName" value="<?=$c['customer_contact']?>"  style="width:120pt"  /></td>
+                      <input class="form-control"  name="txtContactName" type="text" id="txtContactName" value="<?=$c['customer_contact']?>"  style="width:120pt"  /></td>
                       <td height="25" align="left" class="fontBblue"><?=iconv( 'UTF-8', 'TIS-620', "Tel. :");?></td>
-                      <td height="25" align="left" class="fontBblue" colspan="1"><input type="text" value="<?=$c['customer_tel']?>" name="txtContactTel" id="txtContactTel"  style="width:120pt" /></td>
+                      <td height="25" align="left" class="fontBblue" colspan="1"><input class="form-control"  type="text" value="<?=$c['customer_tel']?>" name="txtContactTel" id="txtContactTel"  style="width:120pt" /></td>
                    </tr>
 
                   <tr>
@@ -296,7 +296,7 @@ $(document).ready(function(){
                   <tr>
                       <td height="25" align="left" class="fontBblue"  valign="top"><nobr><?=iconv( 'UTF-8', 'TIS-620', "Problem :");?></td>
                       <td height="25" align="left" class="fontBblue" colspan="5"><nobr>
-                      <input name="areaProblem" id="areaProblem" value="<?=$c["problem"];?>" style="width:630pt"></td>
+                      <input class="form-control"  name="areaProblem" id="areaProblem" value="<?=$c["problem"];?>" style="width:630pt"></td>
                      </tr>
             <?if($_SESSION['Ustate'] ==  "helpdesk" || $_SESSION['Ustate'] ==  "admin" || $_SESSION['Ustate'] ==  "cmmsiadmin") {?>
                     <tr>
@@ -312,7 +312,7 @@ $(document).ready(function(){
                          </td>
                       <td height="25" align="left" class="fontBblue" ><nobr><font color='red'><?=iconv( 'UTF-8', 'TIS-620', "Hour SLA :");?></font></td>
                       <td height="25" align="left" class="fontBblue"><nobr>
-                      <input name="txtSLA" id="txtSLA" type="text" value="<?=$hour_sal?>" style="width:120pt" /></td>
+                      <input class="form-control"  name="txtSLA" id="txtSLA" type="text" value="<?=$hour_sal?>" style="width:120pt" /></td>
                     </tr>
 	<? } ?>
 			<tr>
@@ -326,7 +326,7 @@ $(document).ready(function(){
                          </td>
                       <td height="25" align="left" class="fontBblue" ><nobr><?=iconv( 'UTF-8', 'TIS-620', "Hour SLA :");?></td>
                       <td height="25" align="left" class="fontBblue"><nobr>
-                      <input name="txtSLABSS" id="txtSLABSS" type="text" value="<?=$c['cat_hour']?>" style="width:120pt" /></td>
+                      <input class="form-control"  name="txtSLABSS" id="txtSLABSS" type="text" value="<?=$c['cat_hour']?>" style="width:120pt" /></td>
                     </tr>
 
                     <tr>
@@ -343,8 +343,8 @@ $(document).ready(function(){
 
                           <td height="25" align="left" class="fontBblue" ><nobr><?=iconv( 'UTF-8', 'TIS-620', "Recipt :");?></td>
                           <td height="25" align="left" class="fontBblue" ><nobr>
-                          <input type="hidden" value="<?=$reciept_id;?>" name="UserReciptID" id="UserReciptID">
-                          <input name="cmbUserReceipt" type="text" id="cmbUserReceipt" value="<?=$reciept_name?>"  style="width:160pt" readonly="readonly" />
+                          <input class="form-control"  type="hidden" value="<?=$reciept_id;?>" name="UserReciptID" id="UserReciptID">
+                          <input class="form-control"  name="cmbUserReceipt" type="text" id="cmbUserReceipt" value="<?=$reciept_name?>"  style="width:160pt" readonly="readonly" />
                           <!--a href="javascript:getUser('UserReciptID','BSS')"><img src="image/search.gif" alt="àÅ×Í¡ª×èÍ¼ÙéÃÑºãº§Ò¹" width="26" height="22" border="0" align="top" /></a---></td>
                       </tr>
 
@@ -358,8 +358,8 @@ $(document).ready(function(){
                       </td>
                       <td height="25" align="left" class="fontBblue" ><nobr><?=iconv( 'UTF-8', 'TIS-620', "Engineer :");?></td>
                       <td height="25" align="left" class="fontBblue"><nobr>
-                      <input type="hidden" value="<?=$c["reciept_job_user_id"];?>" name="UserEngineerID" id="UserEngineerID">
-                      <input name="cmbUserEngineer" type="text" id="cmbUserEngineer" readonly value="<?=$c["engineer_name"]. " " .$c["engineer_sname"]?>"  style="width:160pt"  />
+                      <input class="form-control"  type="hidden" value="<?=$c["reciept_job_user_id"];?>" name="UserEngineerID" id="UserEngineerID">
+                      <input class="form-control"  name="cmbUserEngineer" type="text" id="cmbUserEngineer" readonly value="<?=$c["engineer_name"]. " " .$c["engineer_sname"]?>"  style="width:160pt"  />
                       <a href="javascript:getUser('cmbUserEngineer',cmbServiceType.value)"><img src="image/search.gif" alt="àÅ×Í¡ª×èÍ¼Ùé·Õè·Ó§Ò¹" width="26" height="22" border="0" align="top" /></a></td>
                      </tr>
 
@@ -369,10 +369,10 @@ $(document).ready(function(){
 
 
 
-                      <input name="txtProblemSolving" id="txtProblemSolving" value="<?=$c["problem_solving"];?>" style="width:630pt" ><? // onBlur="ckeckrude('txtProblemSolving',txtProblemSolving.value)"?>
-                      <br><input type="button" value="Serial No. (PTT)" style="width:100pt"
+                      <input class="form-control"  name="txtProblemSolving" id="txtProblemSolving" value="<?=$c["problem_solving"];?>" style="width:630pt" ><? // onBlur="ckeckrude('txtProblemSolving',txtProblemSolving.value)"?>
+                      <br><input class="form-control"  type="button" value="Serial No. (PTT)" style="width:100pt"
 onclick="entry_serial_no_ptt(txtSid.value,txtJobNo.value,UserEngineerID.value,cmbServiceType.value);"> &nbsp; &nbsp; &nbsp;
-			   <input type="button" value="Serial No. (BSS)" style="width:100pt"
+			   <input class="form-control"  type="button" value="Serial No. (BSS)" style="width:100pt"
 onclick="entry_serial_no_bss(txtSid.value,txtJobNo.value,UserEngineerID.value,cmbServiceType.value);">
 
 					  <?=iconv( 'UTF-8', 'TIS-620', "Solving By :");?>
@@ -419,7 +419,7 @@ onclick="entry_serial_no_bss(txtSid.value,txtJobNo.value,UserEngineerID.value,cm
              <td width="12%" align="left" class="fontBblue" height="25"><nobr>
               Open Date  : </td>
               <td align="left" class="fontBblue"  colspan="3" height="25">
-              <nobr><input style="width:160pt;" name="open_date" type="text" id="open_date" value="<?=$open_date?>" size="35" maxlength="10"  readonly="readonly"/>
+              <nobr><input class="form-control"  style="width:160pt;" name="open_date" type="text" id="open_date" value="<?=$open_date?>" size="35" maxlength="10"  readonly="readonly"/>
 
         <?// if($_SESSION["Uid"]=="1" || $_SESSION["Uid"]=="50") { ?>
              <a href="#" onclick="cdp1.showCalendar(this, 'open_date'); return false;" >
@@ -445,7 +445,7 @@ onclick="entry_serial_no_bss(txtSid.value,txtJobNo.value,UserEngineerID.value,cm
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <nobr>Appoint Date :
 
-        <input style="width:130pt;" name="appoint_date" type="text" id="appoint_date" value="<?=$appoint_date?>" size="25" maxlength="10"  readonly="readonly"/>
+        <input class="form-control"  style="width:130pt;" name="appoint_date" type="text" id="appoint_date" value="<?=$appoint_date?>" size="25" maxlength="10"  readonly="readonly"/>
 
              <a href="#" onclick="cdp1.showCalendar(this, 'appoint_date'); return false;" >
              <img src="image/calendar.png" width="17" height="13" border="0" /></a>
@@ -474,7 +474,7 @@ onclick="entry_serial_no_bss(txtSid.value,txtJobNo.value,UserEngineerID.value,cm
         <tr>
          <td height="25" align="left" class="fontBblue" ><nobr>Deadline Date  :</td>
          <td height="25" align="left" class="fontBblue"><nobr>
-         <input name="txtDeatLine" type="text" id="txtDeatLine" value="<?=$c["dateline_solving"];?>" readonly  style="width:160pt"/></td>
+         <input class="form-control"  name="txtDeatLine" type="text" id="txtDeatLine" value="<?=$c["dateline_solving"];?>" readonly  style="width:160pt"/></td>
         </tr>
 
         <tr>
@@ -484,7 +484,7 @@ onclick="entry_serial_no_bss(txtSid.value,txtJobNo.value,UserEngineerID.value,cm
              $honsite1 = explode(" ",$onsite_date);
              $honsite = getTime($honsite1[1],0);
              ?>
-         <input name="dteOnSite" type="text" id="dteOnSite" value="<?=$honsite1[0]?>"  style="width:160pt" readonly  />
+         <input class="form-control"  name="dteOnSite" type="text" id="dteOnSite" value="<?=$honsite1[0]?>"  style="width:160pt" readonly  />
          <a href="#" onclick="cdp1.showCalendar(this, 'dteOnSite'); return false;" >
              <img src="image/calendar.png" width="17" height="13" border="0" /></a>
         HH :
@@ -515,7 +515,7 @@ onclick="entry_serial_no_bss(txtSid.value,txtJobNo.value,UserEngineerID.value,cm
              $hfix1 = explode(" ",$fix_date);
              $hfix = getTime($hfix1[1],0);
              ?>
-           <input name="dteFixedTime" type="text" id="dteFixedTime" value="<?=$hfix1[0];?>"  style="width:160pt" readonly />
+           <input class="form-control"  name="dteFixedTime" type="text" id="dteFixedTime" value="<?=$hfix1[0];?>"  style="width:160pt" readonly />
          <a href="#" onclick="cdp1.showCalendar(this, 'dteFixedTime'); return false;" >
              <img src="image/calendar.png" width="17" height="13" border="0" /></a> HH :
              <select name="cmbFixedTimeHH" id="cmbFixedTimeHH">
@@ -537,7 +537,7 @@ onclick="entry_serial_no_bss(txtSid.value,txtJobNo.value,UserEngineerID.value,cm
         <tr>
          <td height="25" align="left" class="fontBblue" >Close Date  :</td>
          <td height="25" align="left" class="fontBblue"><nobr>
-             <input name="dteClose" type="text" style="width:160pt" id="dteClose" value="<?=$close_date?>" readonly  />
+             <input class="form-control"  name="dteClose" type="text" style="width:160pt" id="dteClose" value="<?=$close_date?>" readonly  />
          <a href="#" onclick="cdp1.showCalendar(this, 'dteClose'); return false;" >
              <img src="image/calendar.png" width="17" height="13" border="0" /></a>
 
@@ -577,10 +577,10 @@ onclick="entry_serial_no_bss(txtSid.value,txtJobNo.value,UserEngineerID.value,cm
 
                 <?if($_SESSION['Ustate'] ==  "helpdesk" || $_SESSION['Ustate'] ==  "admin" || $_SESSION['Ustate'] ==  "cmmsiadmin") {?>
                       <td height="25" align="left" class="fontBblue" ><nobr><font color='red'>SLA (PTT) : </font>
-              <input name="txtStatusSLA" type="text" id="txtStatusSLA" value="<?=$c['status_sla'];?>" style="width:60pt" readonly /></td>
+              <input class="form-control"  name="txtStatusSLA" type="text" id="txtStatusSLA" value="<?=$c['status_sla'];?>" style="width:60pt" readonly /></td>
 		<?}?>
 		<td height="25" align="left" class="fontBblue" ><nobr>SLA (BSS) :
-              <input name="status_cat_bss" type="text" id="status_cat_bss" value="<?=$c['status_cat_bss'];?>" style="width:60pt" readonly /></td>
+              <input class="form-control"  name="status_cat_bss" type="text" id="status_cat_bss" value="<?=$c['status_cat_bss'];?>" style="width:60pt" readonly /></td>
 
                      </tr>
                      <? if($_SESSION["Uid"]=="1" || $_SESSION["Uid"]=="50" || $_SESSION["Uid"]=="32")
@@ -598,14 +598,14 @@ onclick="entry_serial_no_bss(txtSid.value,txtJobNo.value,UserEngineerID.value,cm
                      </tr>
                      <? }else{
                        ?>
-                        <input name="withdraw" type="hidden" id="withdraw" value="<?=$c['paid_status'];?>"  />
+                        <input class="form-control"  name="withdraw" type="hidden" id="withdraw" value="<?=$c['paid_status'];?>"  />
 
                     <? } ?>
 
                     <tr>
                       <td height="25" align="left" class="fontBblue" valign="top" ><?=iconv( 'UTF-8', 'TIS-620', "Comment :");?></td>
                       <td height="25" align="left" class="fontBblue" colspan="8"><nobr>
-                        <input name="txtComment" id="txtComment" value="<?=$c['commente'];?>" style="width:630pt" ></td>
+                        <input class="form-control"  name="txtComment" id="txtComment" value="<?=$c['commente'];?>" style="width:630pt" ></td>
                     </tr>
 
 

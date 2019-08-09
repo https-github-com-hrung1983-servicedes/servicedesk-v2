@@ -312,12 +312,12 @@ require_once("function.php");
                     </tr>
                     <tr>
                       <td align="left" valign="top" width="388" colspan="4">รวมระยะทาง  :
-                          </font><input type="text" name="result" maxlength="6" size="20"></font>
+                          </font><input class="form-control"  type="text" name="result" maxlength="6" size="20"></font>
                         </p></div>
                       </td>
                       <td valign="bottom" align="right" width="173">
                         <div align="center">
-                          <p><font face="MS Sans Serif" size="2"><input type="button" value="ตรวจสอบ" name="check" onclick="distance()"></font>
+                          <p><font face="MS Sans Serif" size="2"><input class="form-control"  type="button" value="ตรวจสอบ" name="check" onclick="distance()"></font>
                     </p></div>
                       </td>
                 </tr>

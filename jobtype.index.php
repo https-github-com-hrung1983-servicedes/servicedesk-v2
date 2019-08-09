@@ -65,8 +65,8 @@ require_once("function.php");
                                 <option value = "site_id"  <?if($schBy=="site_id") echo "selected";?> >Site ID</option>            
                                 <option value = "site_name" <?if($schBy=="site_name") echo "selected";?> >Site Name</option>               
                             </select>                                      
-                            <input type="text" name="schTxt" id="schTxt" value="<?=$schTxt ?>">    
-                            &nbsp;<input  type="button" name="sch" value="ค้นหา"  onclick="Search_Click(typer.value,schby.value,schTxt.value)" style="width:50pt;">
+                            <input class="form-control"  type="text" name="schTxt" id="schTxt" value="<?=$schTxt ?>">    
+                            &nbsp;<input class="form-control"   type="button" name="sch" value="ค้นหา"  onclick="Search_Click(typer.value,schby.value,schTxt.value)" style="width:50pt;">
                         </td>                                                         
                         <td width="18" valign="middle">       
                             <a href="jobtype.form.php?typer=add" target="_parent">

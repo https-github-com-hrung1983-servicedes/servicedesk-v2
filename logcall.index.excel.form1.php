@@ -84,10 +84,10 @@ include("header.php");
                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="mytable">
                     <tr>
                         <td width="879" valign="middle" align="center"> <nobr>		
-					From :  <input style="width:100pt;" name="dte_begin" type="text" id="dte_begin" value="<?=$dte_begin?>" size="35" maxlength="10"  readonly="readonly"  onclick="cdp1.showCalendar(this, 'dte_begin'); return false;"  />&nbsp;&nbsp;
-					To :  <input style="width:100pt;" name="dte_end" type="text" id="dte_end" value="<?=$dte_end?>" size="35" maxlength="10"  readonly="readonly" onclick="cdp1.showCalendar(this, 'dte_end'); return false;"  />
+					From :  <input class="form-control"  style="width:100pt;" name="dte_begin" type="text" id="dte_begin" value="<?=$dte_begin?>" size="35" maxlength="10"  readonly="readonly"  onclick="cdp1.showCalendar(this, 'dte_begin'); return false;"  />&nbsp;&nbsp;
+					To :  <input class="form-control"  style="width:100pt;" name="dte_end" type="text" id="dte_end" value="<?=$dte_end?>" size="35" maxlength="10"  readonly="readonly" onclick="cdp1.showCalendar(this, 'dte_end'); return false;"  />
 
-                            &nbsp;<input  type="button" name="sch" value="ค้นหา"  onclick="Search_Click(dte_begin.value,dte_end.value)" style="width:50pt;">
+                            &nbsp;<input class="form-control"   type="button" name="sch" value="ค้นหา"  onclick="Search_Click(dte_begin.value,dte_end.value)" style="width:50pt;">
 <script type="text/javascript"> 
 $(document).ready(function(){  
          

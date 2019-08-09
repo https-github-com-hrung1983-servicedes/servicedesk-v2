@@ -60,8 +60,8 @@ $rs = mysqli_query($conn,$sql);
                 <table width="100%"  border="0" cellpadding="0" cellspacing="0" class="mytable" border="1" bordercolor="#FF0000">
 					  <tr>
        					<td width="95%" colspan="2" align="center">
-                            &nbsp;  SN No. : <input type="text" id="sn_id" value="<?php echo $sn_id;?>">
-                            &nbsp;  <input type="button" value="Search" onclick="schsn(sn_id.value);">
+                            &nbsp;  SN No. : <input class="form-control"  type="text" id="sn_id" value="<?php echo $sn_id;?>">
+                            &nbsp;  <input class="form-control"  type="button" value="Search" onclick="schsn(sn_id.value);">
 						</td>
 					   <td><a href="javascript:history.back(1)" ><img src="image/cancel.jpg" alt="Cancel" width="20" height="18" border="0" align="left" /> </a> </td>
 					   <td align="left"><nobr><b> Back</b>     </td>
@@ -93,8 +93,8 @@ $rs = mysqli_query($conn,$sql);
     </td>
 	<td  style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;"><?=$c["hardware_no"]?></td>
     <td  style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;">
-                <input type="text" id="idupdate"  name="idupdate" value="<?php echo $c["id"]?>" readonly>
-                <input type="button" id="update" name="update" value="Save" onclick="updatesn(idupdate.value,updatecate_id.value,sn_id.value);">
+                <input class="form-control"  type="text" id="idupdate"  name="idupdate" value="<?php echo $c["id"]?>" readonly>
+                <input class="form-control"  type="button" id="update" name="update" value="Save" onclick="updatesn(idupdate.value,updatecate_id.value,sn_id.value);">
     </td>
 </tr>
 					<? $i++; } ?>

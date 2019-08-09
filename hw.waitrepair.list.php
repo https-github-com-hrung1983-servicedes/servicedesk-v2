@@ -134,11 +134,11 @@ $(document).ready(function() {
 					<!---option value="del"><?echo iconv('UTF-8','TIS-620',"ลบ");?></option--->
 <?}?>
 						</select>  
-						<input type="submit" value="Change" onclick="return confirm('Confirm to change');">
+						<input class="form-control"  type="submit" value="Change" onclick="return confirm('Confirm to change');">
 				      </td>
 				   </tr>
 				   <tr>
-					  <th align="center" height="20" width="5%" class="th"><input type="checkbox" id="selecctall"/></th>
+					  <th align="center" height="20" width="5%" class="th"><input class="form-control"  type="checkbox" id="selecctall"/></th>
                       <th align="center" height="20" width="5%" class="th">#</th>
                       <th align="center" height="20" width="15%" class="th"">Hardware</th>
                       <th align="center" height="20" width="10%" class="th"">Serial no.</th>
@@ -194,7 +194,7 @@ $(document).ready(function() {
 			$names = $c["name"]." ".$c["sname"];				
 							?>
 	 <tr onmouseover="this.style.backgroundColor='violet';" onmouseout="this.style.backgroundColor='white';" >
-	    <td align="center" style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;" ><input class="checkbox1" type="checkbox" name="check[]" id="check<?=$i?>" value="<?=$c["id"]?>"></td>
+	    <td align="center" style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;" ><input class="form-control"  class="checkbox1" type="checkbox" name="check[]" id="check<?=$i?>" value="<?=$c["id"]?>"></td>
 	    <td align="center" height="20" style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;" >
 	       <a lang="hw.waitrepair.form.php?id=<?=$c["id"]?>" class="thickbox pointer" title="Hardware Repairing"><font color="<?= $font?>"><?=$i?></font></a></td>
 	    <td  style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;">

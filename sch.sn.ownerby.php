@@ -131,11 +131,11 @@ $(document).ready(function(){
     <tr>                                               
         <td valign="top" align="center">                                                       
             <form action="logcall.excute.php"  method="post"  name="form1" id="form1"  >
-            <input type="hidden" value="<?=$id?>" name="id" id = "id">     
-            <input type="hidden" value="<?=$c["job_no"];?>" name="job_no_update_bss" id = "job_no_update_bss">     
-			<input type="hidden" value="<?=$type?>" name="mode" id = "mode">     
-            <input type="hidden" value="<?=$_REQUEST["dte_beg"]?>" name="dte_beg" id = "dte_beg">
-            <input type="hidden" value="<?=$_REQUEST["dte_end"]?>" name="dte_end" id = "dte_end">
+            <input class="form-control"  type="hidden" value="<?=$id?>" name="id" id = "id">     
+            <input class="form-control"  type="hidden" value="<?=$c["job_no"];?>" name="job_no_update_bss" id = "job_no_update_bss">     
+			<input class="form-control"  type="hidden" value="<?=$type?>" name="mode" id = "mode">     
+            <input class="form-control"  type="hidden" value="<?=$_REQUEST["dte_beg"]?>" name="dte_beg" id = "dte_beg">
+            <input class="form-control"  type="hidden" value="<?=$_REQUEST["dte_end"]?>" name="dte_end" id = "dte_end">
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="mytable" border="1" bordercolor="#FF0000">
                     <tr>
                         <th align="center" height="40" width="100%" colspan="7" class="th">Log call center</th>                    
@@ -148,7 +148,7 @@ $(document).ready(function(){
 						<img src="image/addedit.png" alt="Cancel" width="20" height="18" border="0" align="right" /></a></td>
 						<td><nobr><b>ลายเซ็นต์ผู้ตรวจสอบ</b></td> 
 						<? } else { ?><td width="95%" align="right" ></td><? } ?>
-						<td><input name="Submit"  type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />	</td>
+						<td><input class="form-control"  name="Submit"  type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />	</td>
 					   <td align="left"><b>บันทึก</b>    </td>
 					   <td><a href="javascript:history.back(1)" ><img src="image/cancel.jpg" alt="Cancel" width="20" height="18" border="0" align="left" /> </a> </td>
 					   <td align="left"><nobr><b> ยกเลิก</b>     </td>

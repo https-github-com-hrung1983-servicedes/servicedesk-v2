@@ -126,7 +126,7 @@ $i = 1;
 					<option value="200" <?if(200==$limits) echo "selected";?>>200</option>
 					<option value="300" <?if(300==$limits) echo "selected";?>>300</option>
 				</select> &nbsp;
-		<input type="button" value="Search" onclick="Search_Click(cate_id.value,limits.value,fmmnt.value,fmyear.value,tomnt.value,toyear.value)">
+		<input class="form-control"  type="button" value="Search" onclick="Search_Click(cate_id.value,limits.value,fmmnt.value,fmyear.value,tomnt.value,toyear.value)">
 		</td>
 		    </tr>
 	      <tr>

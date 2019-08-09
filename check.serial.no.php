@@ -58,8 +58,8 @@ $rs = mysqli_query($conn,$sql);
         <td valign="top">                                                       
                 <table width="100%"  border="0" cellpadding="0" cellspacing="0" class="mytable" border="1" bordercolor="#FF0000">
 					  <tr>
-       					<td width="90%" colspan="2" align="center">กรอก Serial no : <input type="text" name="shctxt" id="shctxt" style="width:150pt" value="<?=$shctxt?>" /> 
-					  <input type="button" value="ค้นหา" id="bntsch" name="bntsch" onclick="Search_Click(shctxt.value)" />
+       					<td width="90%" colspan="2" align="center">กรอก Serial no : <input class="form-control"  type="text" name="shctxt" id="shctxt" style="width:150pt" value="<?=$shctxt?>" /> 
+					  <input class="form-control"  type="button" value="ค้นหา" id="bntsch" name="bntsch" onclick="Search_Click(shctxt.value)" />
 						</td>					  
 					 </tr>
                 </table>

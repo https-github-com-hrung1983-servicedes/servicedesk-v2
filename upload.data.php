@@ -53,14 +53,14 @@ body {
 <body>
 <center><br>
 <form action="upload.data.execute.php" method="post" enctype="multipart/form-data" name="bigchernForm" onSubmit="return chckval()">
- รหัสสถานี : <input type="text" name="foldername" id="foldername" value="<?=$_REQUEST["txt"]?>"><br><br>
-	  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-	  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-	  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-	  <input type="file" name="bigchernFile[]" id="bigchernFile"><br>
-	  <input type="file" name="bigchernFile[]" id="bigchernFile"><br><br>
-	  <input type="submit" name="bigchern" value="Upload file" >
-	  <input type="hidden" name="event" value="upload"><br><br>
+ รหัสสถานี : <input class="form-control"  type="text" name="foldername" id="foldername" value="<?=$_REQUEST["txt"]?>"><br><br>
+	  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+	  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+	  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+	  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br>
+	  <input class="form-control"  type="file" name="bigchernFile[]" id="bigchernFile"><br><br>
+	  <input class="form-control"  type="submit" name="bigchern" value="Upload file" >
+	  <input class="form-control"  type="hidden" name="event" value="upload"><br><br>
 	  <a href='list.folder.data.php' target='_blank'>รายละเอียด</a><br><br>
 	  <? if($_SESSION["Username"]=="hrung"  ||  $_SESSION["Username"]=="santi") { ?>
 	  			<a href="del.file.php?folder_name=" target='_blank'>ลบ</div>
@@ -130,12 +130,12 @@ body {
     </script>
      <td>&nbsp;
      </td><td>
-    รหัสสถานี : <input type="text" name="foldername" id="foldername">  </td>  
-    <td>เลือกไฟล์ : <input type="file" name="filUpload" id="filUpload"> </td>
+    รหัสสถานี : <input class="form-control"  type="text" name="foldername" id="foldername">  </td>  
+    <td>เลือกไฟล์ : <input class="form-control"  type="file" name="filUpload" id="filUpload"> </td>
     </tr>
     <tr>
         <th colspan="3">
-            <input type="submit" name="submit" value="Upload">&nbsp;&nbsp;<input type="reset" name="cancel" value="Cancel">
+            <input class="form-control"  type="submit" name="submit" value="Upload">&nbsp;&nbsp;<input class="form-control"  type="reset" name="cancel" value="Cancel">
         </th>
     </tr> <tr><th colspan="3"><a href='data/' target='_blank'>รายละเอียด</a></th></tr>
 </form>

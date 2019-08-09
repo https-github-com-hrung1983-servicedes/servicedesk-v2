@@ -96,12 +96,12 @@ function getKey(){
     <tr>
         <td valign="top" align="center">
             <form action=".execute.php"  method="post"  name="form1" id="form1"  >
-			<input  type="hidden" value="<?=$id?>" name="id_rep" id="id_rep" />
+			<input class="form-control"   type="hidden" value="<?=$id?>" name="id_rep" id="id_rep" />
                 <table border="0" cellpadding="0" cellspacing="0" class="mytable" border="1"  bordercolor="#FF0000">
 
                     <tr>
                         <td bgcolor="white" width="95%" align="right" colspan="2" >
-						<input name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
+						<input class="form-control"  name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
                        <td align="left" bgcolor="white" width="10%"><b>Save</b>    </td>
                      </tr>
 					 <tr>
@@ -138,7 +138,7 @@ function getKey(){
 					<tr>
                       <td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Serial No.  :  </td>
                       <td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					 <input type="text" onKeyPress="getKey()" name="serialno" id="serialno" style="width:250pt" >
+					 <input class="form-control"  type="text" onKeyPress="getKey()" name="serialno" id="serialno" style="width:250pt" >
 						</td>
 					</tr>
   <script>
@@ -156,7 +156,7 @@ function getKey(){
 		<tr id="license_windows_nox">
 		  <td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;<nobr><?=iconv('UTF-8','TIS-620',"License Windows");?> :  </td>
 		  <td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-			 <input type="text" name="license_windows_no" id="license_windows_no" style="width:250pt" >
+			 <input class="form-control"  type="text" name="license_windows_no" id="license_windows_no" style="width:250pt" >
 			 </td>
                 </tr>
 			
@@ -164,32 +164,32 @@ function getKey(){
 					<tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Enter Stock  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  			<input type="date" name="dte_tme_entry_stock" id="dte_tme_entry_stock" readonly="readonly" value="<?=date("Y-m-d")?>" style="width:250pt"  >
+					  			<input class="form-control"  type="date" name="dte_tme_entry_stock" id="dte_tme_entry_stock" readonly="readonly" value="<?=date("Y-m-d")?>" style="width:250pt"  >
 						</td>
                     </tr>
 
 					<tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Warranty Date  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  			<input type="date" name="dte_tme_warranty" id="dte_tme_warranty"  value="<?=date("Y-m-d")?>" style="width:250pt"  >
+					  			<input class="form-control"  type="date" name="dte_tme_warranty" id="dte_tme_warranty"  value="<?=date("Y-m-d")?>" style="width:250pt"  >
 						</td>
                     </tr>
 					<tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" ><nobr>&nbsp;&nbsp;Expired Warranty Date  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  			<input type="date" name="dte_tme_expired_warranty" id="dte_tme_expired_warranty"  value="<?=date("Y-m-d", strtotime('+5 years'))?>" style="width:250pt">
+					  			<input class="form-control"  type="date" name="dte_tme_expired_warranty" id="dte_tme_expired_warranty"  value="<?=date("Y-m-d", strtotime('+5 years'))?>" style="width:250pt">
 						</td>
                     </tr>
 		    <tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Install Date  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  			<input type="date" name="dte_tme_install" id="dte_tme_install"  value="<?=date("Y-m-d")?>" style="width:250pt"  >
+					  			<input class="form-control"  type="date" name="dte_tme_install" id="dte_tme_install"  value="<?=date("Y-m-d")?>" style="width:250pt"  >
 						</td>
                     </tr>
 					<tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Expired Date  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  			<input type="date" name="dte_tme_expired" id="dte_tme_expired"  value="<?=date("Y-m-d", strtotime('+5 years'))?>" style="width:250pt"  >
+					  			<input class="form-control"  type="date" name="dte_tme_expired" id="dte_tme_expired"  value="<?=date("Y-m-d", strtotime('+5 years'))?>" style="width:250pt"  >
 						</td>
                     </tr>
 					<tr>
@@ -209,7 +209,7 @@ function getKey(){
 										<option value="a" selected="selected">Active</option>
 										<option value="j" >Reject</option>
 								</select>								
-					<input type="hidden" name="user_enter" id="user_enter" value="<?=$_SESSION["User_id"]?>" readonly>
+					<input class="form-control"  type="hidden" name="user_enter" id="user_enter" value="<?=$_SESSION["User_id"]?>" readonly>
 					</td>
                     </tr>
 		    <tr><td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Fix Site :</td>
@@ -302,7 +302,7 @@ function getKey(){
 			<tr>
 				<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Comment (lot) :</td>
 					  <td height="25" bgcolor="white"  colspan="3" >
-					  <input type="text" name="buy_by" id="buy_by" style="width:250pt">
+					  <input class="form-control"  type="text" name="buy_by" id="buy_by" style="width:250pt">
 
 			</td></tr>
 					<tr><td height="25" bgcolor="white"  colspan="3" >&nbsp;</td></tr>

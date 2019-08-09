@@ -57,8 +57,8 @@ require_once("function.php");
                                 <option value = "customer_id"  <?if($schBy=="customer_id") echo "selected";?> >Customer ID</option>            
                                 <option value = "customer_name" <?if($schBy=="customer_name") echo "selected";?> >Customer Name</option>               
                             </select>                                      
-                            <input type="text" name="schTxt" id="schTxt" value="<?=$schTxt ?>">    
-                            &nbsp;<input  type="button" name="sch" value="ค้นหา"  onclick="Search_Click(schby.value,schTxt.value)" style="width:50pt;">
+                            <input class="form-control"  type="text" name="schTxt" id="schTxt" value="<?=$schTxt ?>">    
+                            &nbsp;<input class="form-control"   type="button" name="sch" value="ค้นหา"  onclick="Search_Click(schby.value,schTxt.value)" style="width:50pt;">
                         </td>                                                         
                         <td width="18" valign="middle">    
                              <a href="customer.form.php?typer=add" target="_parent">

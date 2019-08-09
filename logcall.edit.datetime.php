@@ -46,8 +46,8 @@ $closem = date('i',strtotime($c["closed_time"]));
 
 
 <form name="frm1" id="frm1" action="logcall.edit.datetime.action.php" method="POST">
-<input type="hidden" name="jid" id="jid" value="<?=$jid?>">
-<input type="hidden" name="jobno" id="jobno" value="<?=$c["job_no"]?>">
+<input class="form-control"  type="hidden" name="jid" id="jid" value="<?=$jid?>">
+<input class="form-control"  type="hidden" name="jobno" id="jobno" value="<?=$c["job_no"]?>">
 <center>
 <br>
 
@@ -56,7 +56,7 @@ JobNo : <?=$c["job_no"]?><br>
 <? if($c["open_call_dte"] != NULL) { ?>
 <tr>
   <td height="25" align="left" class="fontBblue">Open DateTime</td>
-  <td><input type="date" name="update_open_date" id="update_open_date" value="<?=$opendate?>"></td>
+  <td><input class="form-control"  type="date" name="update_open_date" id="update_open_date" value="<?=$opendate?>"></td>
   <td>
 
       <select  name="update_open_h" id="update_open_h">
@@ -77,7 +77,7 @@ JobNo : <?=$c["job_no"]?><br>
 <? if($c["onsite_datetime"] != NULL) { ?>
 <tr>
   <td height="25" align="left" class="fontBblue">Onsite DateTime</td>
-  <td><input type="date" name="update_onsite_date" id="update_onsite_date" value="<?=$onsitedate?>"></td>
+  <td><input class="form-control"  type="date" name="update_onsite_date" id="update_onsite_date" value="<?=$onsitedate?>"></td>
   <td>
 
     <select  name="update_onsite_h" id="update_onsite_h">
@@ -97,7 +97,7 @@ JobNo : <?=$c["job_no"]?><br>
 <? if($c["fixed_time"] != NULL) { ?>
 <tr>
   <td height="25" align="left" class="fontBblue">Fix DateTime</td>
-  <td><input type="date" name="update_fix_date" id="update_fix_date" value="<?=$fixdate?>"></td>
+  <td><input class="form-control"  type="date" name="update_fix_date" id="update_fix_date" value="<?=$fixdate?>"></td>
   <td>
 
     <select  name="update_fix_h" id="update_fix_h">
@@ -117,7 +117,7 @@ JobNo : <?=$c["job_no"]?><br>
 <? if($c["closed_date"] != NULL) { ?>
 <tr>
   <td height="25" align="left" class="fontBblue">Close DateTime</td>
-  <td><input type="date" name="update_close_date" id="update_close_date" value="<?=$closedate?>"></td>
+  <td><input class="form-control"  type="date" name="update_close_date" id="update_close_date" value="<?=$closedate?>"></td>
   <td>
 
     <select  name="update_close_h" id="update_close_h">
@@ -135,7 +135,7 @@ JobNo : <?=$c["job_no"]?><br>
 </tr>
 <? } ?>
 <tr>
-  <td colspan="3" align="center"><input type="submit" value="Submit"></td>
+  <td colspan="3" align="center"><input class="form-control"  type="submit" value="Submit"></td>
 </tr>
 
 </center>

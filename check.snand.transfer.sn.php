@@ -67,8 +67,8 @@ $rs = mysqli_query($conn,$sql);
                                         <option <?echo $c_user["user_id"];?>><?echo $c_user["name"]." ".$c_user["sname"]?></option>
                                 <?}?>
                            </select>
-                            Serial no : <input type="text" name="shctxt" id="shctxt" style="width:150pt" value="<?=$shctxt?>" /> 
-					  <input type="button" value="Search" id="bntsch" name="bntsch" onclick="Search_Click(shctxt.value)" />
+                            Serial no : <input class="form-control"  type="text" name="shctxt" id="shctxt" style="width:150pt" value="<?=$shctxt?>" /> 
+					  <input class="form-control"  type="button" value="Search" id="bntsch" name="bntsch" onclick="Search_Click(shctxt.value)" />
 						</td>					  
 					 </tr>
                 </table>

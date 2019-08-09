@@ -141,7 +141,7 @@ if($_SESSION["Ustate"] == "admin" || $_SESSION["Ustate"] == "account"){
 							  						<option value="4" >4.00</option>	
 							  						<option value="8" >8.00</option>	
                     </select>
-                    <input type="submit" value="<?echo iconv('UTF-8','TIS-620','คำนวนค่ากิโล');?>" name="submit">
+                    <input class="form-control"  type="submit" value="<?echo iconv('UTF-8','TIS-620','คำนวนค่ากิโล');?>" name="submit">
             <? } ?>
                     </td>
 				 </tr>
@@ -164,9 +164,9 @@ if($_SESSION["Ustate"] == "admin" || $_SESSION["Ustate"] == "account"){
                   <?
                   while($c = mysqli_fetch_array($rc)){
                   ?>
-                  <input type="hidden" value="<?=$c['id']?>" name="ccid">
+                  <input class="form-control"  type="hidden" value="<?=$c['id']?>" name="ccid">
                   <tr onmouseover="this.style.backgroundColor='violet';" onmouseout="this.style.backgroundColor='white';" >
-                  <td style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;"  align="center"><input type="checkbox" value="<?=$c['id']?>-<?=$c['seq_id']?>-<?=$c['ditstance_result']?>" name="edit_km[]"></td>
+                  <td style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;"  align="center"><input class="form-control"  type="checkbox" value="<?=$c['id']?>-<?=$c['seq_id']?>-<?=$c['ditstance_result']?>" name="edit_km[]"></td>
                        <td style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;"  align="center">&nbsp;<?=$c["seq_id"]?></td>
                        <td style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;"  align="center">&nbsp;<?=$c["dte"]?></td>
                        <td style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;"  align="center">&nbsp;<?=$c["site_id"]?></td>

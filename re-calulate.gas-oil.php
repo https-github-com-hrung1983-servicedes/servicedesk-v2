@@ -65,7 +65,7 @@ $(document).ready(function(){
 <table width="100%" align="center" class="mytable1" id="table" height="100%"   cellpadding="1" cellspacing="1" >
     <tr>
         <td valign="top">             
-<input type="hidden" name="id_re" value="<?=$id?>" id="id_re" />
+<input class="form-control"  type="hidden" name="id_re" value="<?=$id?>" id="id_re" />
                   <table width="100%" border="0" cellpadding="0" cellspacing="0" class="mytable1" bgcolor="#FFFFFF">
                     <tr>
                         <td valign="middle" align="center"> <nobr>

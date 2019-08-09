@@ -158,7 +158,7 @@ while($c_cate = mysqli_fetch_array($rs_cate)){
                 </table>
                <table width="100%" border="0" align="center" class="mytable" id="table7"  cellpadding="1" cellspacing="1">
 				   
-				   <tr><th align="center" height="20" width="5%" class="th"><input type="checkbox" id="selecctall"/></th>
+				   <tr><th align="center" height="20" width="5%" class="th"><input class="form-control"  type="checkbox" id="selecctall"/></th>
                       <th align="center" height="20" width="10%" class="th">No.</th>
                       <th align="center" height="20" width="10%" class="th">user_id</th>
                       <th align="center" height="20" width="10%" class="th">hardware_no</th>
@@ -175,7 +175,7 @@ $i++;
 ?>
 	 <tr onmouseover="this.style.backgroundColor='violet';" onmouseout="this.style.backgroundColor='white';" >
 	    <td align="center" style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;" >
-		<input class="checkbox1" type="checkbox" name="check[]" id="check<?=$i?>" value="<?=$c["id"]?>"></td>
+		<input class="form-control"  class="checkbox1" type="checkbox" name="check[]" id="check<?=$i?>" value="<?=$c["id"]?>"></td>
 	    <td align="center" height="20" style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;" ><?=$i?></td>
 	    <td  style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;"><?=$c["user_id"]?></a></td>
 	    <td align="left" style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;" ><?=$c["hardware_no"]?></td>
@@ -186,7 +186,7 @@ $i++;
 	    <td align="center" style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;"><?=$c["comment_lot"]?></td></td>			
 	 </tr>
 	    <?  } ?>
-		<input type="hidden" name="rows" id="rows" value="<?=$i;?>">	
+		<input class="form-control"  type="hidden" name="rows" id="rows" value="<?=$i;?>">	
 	 <tr><td colspan="5"><?=$i?>  (Rows)</td></tr>
                 </table>
             </td></tr></table>

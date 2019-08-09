@@ -172,12 +172,12 @@ $(document).ready(function() {
 
 
 								</select>
-						   <input type="submit" value="Change" onclick="return confirm('Confirm to change');">
+						   <input class="form-control"  type="submit" value="Change" onclick="return confirm('Confirm to change');">
 					 </td>
 				   </tr>
 				   <tr>
 		     <?*/?>
-					  <!--th align="center" height="20" width="5%" class="th"><input type="checkbox" id="selecctall"/></th-->
+					  <!--th align="center" height="20" width="5%" class="th"><input class="form-control"  type="checkbox" id="selecctall"/></th-->
                       <th align="center" height="20" width="5%" class="th">#</th>
                       <th align="center" height="20" width="15%" class="th"">Name</th>
                       <th align="center" height="20" width="20%" class="th"">Hardware</th>
@@ -191,7 +191,7 @@ $(document).ready(function() {
                     </tr>
 					<? $i = 1;	while($c = mysqli_fetch_array($rs)) {	 ?>
 					<tr onmouseover="this.style.backgroundColor='violet';" onmouseout="this.style.backgroundColor='white';" >
-			<? /* td align="center" height="20" style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;" ><input class="checkbox1" type="checkbox" name="check[]" id="check<?=$i?>" value="<?=$c["id"]?>"></td */ ?>
+			<? /* td align="center" height="20" style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;" ><input class="form-control"  class="checkbox1" type="checkbox" name="check[]" id="check<?=$i?>" value="<?=$c["id"]?>"></td */ ?>
 			<td align="center" height="20" style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;" >
 <a lang="hw.onhand.entry.php?id=<?=$c['id']?>" class="thickbox pointer"><?=$i?></a></td>
 			<td height="20" style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;">

@@ -119,12 +119,12 @@ $expired_hardware_type_date=str_replace("/", "-", $c["expired_hardware_type_date
     <tr>
         <td valign="top" align="center">
             <form action="#"  method="post"  name="form1" id="form1"  >
-			<input  type="hidden" value="<?=$id?>" name="id_rep" id="id_rep" />
+			<input class="form-control"   type="hidden" value="<?=$id?>" name="id_rep" id="id_rep" />
                 <table border="0" cellpadding="0" cellspacing="0" class="mytable" border="1"  bordercolor="#FF0000">
 
                     <tr>
                         <td bgcolor="white" width="95%" align="right" colspan="2" >
-				<input name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />  </td>
+				<input class="form-control"  name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />  </td>
                        <td align="left" bgcolor="white" width="10%"><b>Save</b>
 			</td>
 			<td bgcolor="white" align="right">
@@ -169,7 +169,7 @@ $sql_cate = "select cate_id,cate_name  from tbl_category_hardware  where cate_id
 					<tr>
                       <td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Serial No.  :  </td>
                       <td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="4" >
-				 <input name="serialno" id="serialno" style="width:250pt" value="<?=$c["hardware_no"]?>" readonly="readonly" >
+				 <input class="form-control"  name="serialno" id="serialno" style="width:250pt" value="<?=$c["hardware_no"]?>" readonly="readonly" >
 </td>
 					</tr>
 <script>
@@ -188,7 +188,7 @@ $sql_cate = "select cate_id,cate_name  from tbl_category_hardware  where cate_id
 		<tr id="license_windows_nox">
 		  <td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;<nobr><?=iconv('UTF-8','TIS-620',"License Windows");?> :  </td>
 		  <td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-			 <input type="text" name="license_windows_no" id="license_windows_no" value="<?=$c["license_windows_no"]?>" style="width:250pt" >
+			 <input class="form-control"  type="text" name="license_windows_no" id="license_windows_no" value="<?=$c["license_windows_no"]?>" style="width:250pt" >
 			 </td>
                 </tr>					
 	<? } ?>			
@@ -196,32 +196,32 @@ $sql_cate = "select cate_id,cate_name  from tbl_category_hardware  where cate_id
 					<tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Form Stock  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="4" >
-								<input type="date" name="dte_tme_warranty" id="dte_tme_warranty"  readonly  value="<?=date ("Y-m-d", strtotime($dte_tme_entry_stock))?>" style="width:250pt"  >
+								<input class="form-control"  type="date" name="dte_tme_warranty" id="dte_tme_warranty"  readonly  value="<?=date ("Y-m-d", strtotime($dte_tme_entry_stock))?>" style="width:250pt"  >
 						</td>
                     </tr>
 
 					<tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Install Date  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  			<input type="date" name="dte_tme_install" id="dte_tme_install"  value="<?=date ("Y-m-d", strtotime($installation_date))?>" style="width:250pt"  >
+					  			<input class="form-control"  type="date" name="dte_tme_install" id="dte_tme_install"  value="<?=date ("Y-m-d", strtotime($installation_date))?>" style="width:250pt"  >
 						</td>
                     </tr>
 					<tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Expired Date  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  			<input type="date" name="dte_tme_expired" id="dte_tme_expired"  value="<?=date ("Y-m-d", strtotime($expired_date))?>" style="width:250pt"  >
+					  			<input class="form-control"  type="date" name="dte_tme_expired" id="dte_tme_expired"  value="<?=date ("Y-m-d", strtotime($expired_date))?>" style="width:250pt"  >
 						</td>
                     </tr>
 					<tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Warranty Date  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  			<input type="date" name="dte_tme_warranty" id="dte_tme_warranty"  value="<?=date ("Y-m-d", strtotime($warranty_hardware_type_date))?>" style="width:250pt"  >
+					  			<input class="form-control"  type="date" name="dte_tme_warranty" id="dte_tme_warranty"  value="<?=date ("Y-m-d", strtotime($warranty_hardware_type_date))?>" style="width:250pt"  >
 						</td>
                     </tr>
 					<tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" ><nobr>&nbsp;&nbsp;Expired Warranty Date  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  			<input type="date" name="dte_tme_expired_warranty" id="dte_tme_expired_warranty"  value="<?=date ("Y-m-d", strtotime($expired_hardware_type_date))?>" style="width:250pt">
+					  			<input class="form-control"  type="date" name="dte_tme_expired_warranty" id="dte_tme_expired_warranty"  value="<?=date ("Y-m-d", strtotime($expired_hardware_type_date))?>" style="width:250pt">
 						</td>
                     </tr>
 		    <!--tr>

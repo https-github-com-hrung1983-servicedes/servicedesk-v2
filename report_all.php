@@ -95,7 +95,7 @@ require_once("function.php");
 				  while($c = mysqli_fetch_array($rc)){
 				  ?>
 				  <tr onmouseover="this.style.backgroundColor='violet';" onmouseout="this.style.backgroundColor='white';" >
-				  <td style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;"  align="center"><input type="radio" name="reporttype" value="<?=$c["report_no"];?>" >
+				  <td style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;"  align="center"><input class="form-control"  type="radio" name="reporttype" value="<?=$c["report_no"];?>" >
 				  </td>
 					   <td style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;"  align="center"><?=$i;?></td>
 					   <td style="padding:0px; border-bottom:1px solid #ccc; border-right:1px solid #ccc;border-color:#003366;"  align="left">&nbsp;&nbsp;<?=$c["report_name"];?></td>

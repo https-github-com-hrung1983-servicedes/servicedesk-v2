@@ -114,12 +114,12 @@ $start_pm_month ='07' // =>07/2015
 		  </select>
 
 
-<input type="hidden" name="site_id" type="site_id" value="<?=$siteid?>">
+<input class="form-control"  type="hidden" name="site_id" type="site_id" value="<?=$siteid?>">
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------->
 			</td>
 			<td><nobr>
 			</td><td>
-				<input name="Submit" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />
+				<input class="form-control"  name="Submit" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />
 			</td>
 <td><b>Save</b></td>
 	</tr>
@@ -204,9 +204,9 @@ if($cnt_job==1){
 
 <div>
 <? //echo "i = $i"; ?>
-<input type="text" name="search-box[]" id="search-box<?=$i?>" autocomplete="off" style="width: 400px;"/>
-<input type="hidden" name="id-box[]" id="id-box<?=$i?>" autocomplete="off" readonly/>
-<input type="hidden" name="cate-id[]" id="cate-id<?=$i?>" autocomplete="off" readonly/>
+<input class="form-control"  type="text" name="search-box[]" id="search-box<?=$i?>" autocomplete="off" style="width: 400px;"/>
+<input class="form-control"  type="hidden" name="id-box[]" id="id-box<?=$i?>" autocomplete="off" readonly/>
+<input class="form-control"  type="hidden" name="cate-id[]" id="cate-id<?=$i?>" autocomplete="off" readonly/>
 <div id="suggesstion-box<?=$i?>"></div>
 </div>
 <script>

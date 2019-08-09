@@ -192,8 +192,8 @@ if($typer=="2"){
 							</select>
 
 
-                            &nbsp;<input  type="button" name="sch" value="Search"  onclick="Search_Click(typer.value,months.value,years.value,job.value,emp.value)" style="width:50pt;">
-                            &nbsp;<input  type="button" name="report3g" id="report3g" value="3G Excel" style="width:50pt;">
+                            &nbsp;<input class="form-control"   type="button" name="sch" value="Search"  onclick="Search_Click(typer.value,months.value,years.value,job.value,emp.value)" style="width:50pt;">
+                            &nbsp;<input class="form-control"   type="button" name="report3g" id="report3g" value="3G Excel" style="width:50pt;">
 <script type="text/javascript"> 
 $(document).ready(function(){  
          

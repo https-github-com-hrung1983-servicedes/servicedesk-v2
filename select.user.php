@@ -93,12 +93,12 @@ $(document).ready(function(){
 									}
 					  }
 </script>
-<input type="hidden" value="<?=$serial_id?>" name="serial_id" id="serial_id">
-<input type="hidden" value="<?=$sch_text?>" name="sch_text" id="sch_text">
+<input class="form-control"  type="hidden" value="<?=$serial_id?>" name="serial_id" id="serial_id">
+<input class="form-control"  type="hidden" value="<?=$sch_text?>" name="sch_text" id="sch_text">
     <table align="center" class="mytable" id="table"   cellpadding="1" cellspacing="1">
 	<tr>
                         <td bgcolor="white" width="95%" align="right" >
-						<input name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
+						<input class="form-control"  name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
                        <td align="left" bgcolor="white" width="10%"><b>Save</b>    </td>
                      </tr>
     <tr>                                               
@@ -116,7 +116,7 @@ $(document).ready(function(){
 			   <? }?>
 			           <option value="asdf">อื่นๆ สำหรับเปลี่ยนสถานี</option>
 				</select>
-				<input type="text" value="" name="site_name" id="site_name">
+				<input class="form-control"  type="text" value="" name="site_name" id="site_name">
 			</td>      
         </tr>
 

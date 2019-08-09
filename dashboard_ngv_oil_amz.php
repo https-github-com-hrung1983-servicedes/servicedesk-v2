@@ -72,7 +72,7 @@ if ( $month == "" || $year=="" ) {
         <option value="2016" <?if($year=="2016") echo "selected";?>>2016</option>
         <option value="2017" <?if($year=="2017") echo "selected";?>>2017</option>
         </select>
-        <input type="submit" value="Submit">
+        <input class="form-control"  type="submit" value="Submit">
 
   </td>
           </form>

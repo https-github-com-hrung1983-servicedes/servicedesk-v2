@@ -173,15 +173,15 @@ $sql_job_type = "select category_id,fixed_description from tbl_category_type";
                                 <option value="19" <?if($schBy == "19") echo "selected";?>><?=iconv( 'UTF-8', 'TIS-620', "รออุปกรณ์");?></option>
                                 <option value="18" <?if($schBy == "18") echo "selected";?>>Overtime</option>
                             </select>
-                            <input type="text" style="width:90pt;" name="schTxt" id="schTxt" value="<?=$schTxt ?>">
+                            <input class="form-control"  type="text" style="width:90pt;" name="schTxt" id="schTxt" value="<?=$schTxt ?>">
 
                             <b>&nbsp;Date :</b>
-                            <input style="width:60pt;" name="date_beg"  type="text" onclick="cdp1.showCalendar(this, 'date_beg');return false;" id="date_beg" value="<?=$dte_beg;?>" size="35" maxlength="10" />
+                            <input class="form-control"  style="width:60pt;" name="date_beg"  type="text" onclick="cdp1.showCalendar(this, 'date_beg');return false;" id="date_beg" value="<?=$dte_beg;?>" size="35" maxlength="10" />
                              <span class="fonttitle_board">&nbsp;-&nbsp;</span>
-                            <input style="width:60pt;" name="date_end"  type="text" onclick="cdp1.showCalendar(this, 'date_end');return false;" id="date_end" value="<?=$dte_end;?>" size="35" maxlength="10" />
+                            <input class="form-control"  style="width:60pt;" name="date_end"  type="text" onclick="cdp1.showCalendar(this, 'date_end');return false;" id="date_end" value="<?=$dte_end;?>" size="35" maxlength="10" />
 
 
-                            &nbsp;<input  type="button" name="sch" value="Search"  onclick="Search_Click(schBy.value,schTxt.value,date_beg.value,date_end.value)" style="width:50pt;">
+                            &nbsp;<input class="form-control"   type="button" name="sch" value="Search"  onclick="Search_Click(schBy.value,schTxt.value,date_beg.value,date_end.value)" style="width:50pt;">
                             &nbsp;
                             <?/*select>
                             <?

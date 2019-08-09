@@ -90,8 +90,8 @@ $status_check = $c["status_check"];
     <tr>
         <td valign="top">
             <form action="incentive.executex.php"  method="post" target="mainPage"  name="form1" id="form1" onsubmit="return CheckText()"  >
-            <input type="hidden" value="<?=$id?>" name="id" id = "id">
-            <input type="hidden" value="2" name="authen_by" id = "authen_by">
+            <input class="form-control"  type="hidden" value="<?=$id?>" name="id" id = "id">
+            <input class="form-control"  type="hidden" value="2" name="authen_by" id = "authen_by">
 
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="mytable" border="1" bordercolor="#FF0000">
                     <tr>
@@ -112,35 +112,35 @@ $status_check = $c["status_check"];
                    <tr>
                       <td height="20" align="left" class="fontBblue">No.  :  </td>
                       <td align="left" class="fontBblue">
-                          <input style="width:100pt;" name="other_no" type="text" id="other_no" value="<?=$c["other_no"]?>" readonly="readonly"/></td>
+                          <input class="form-control"  style="width:100pt;" name="other_no" type="text" id="other_no" value="<?=$c["other_no"]?>" readonly="readonly"/></td>
                      </tr>
                    <tr>
                       <td height="20" align="left" class="fontBblue">Date  : </td>
                       <td align="left" class="fontBblue">
-                          <input style="width:100pt;" name="other_date" type="text" id="other_date" value="<?=$other_date?>" size="35" maxlength="10"  readonly="readonly"/>                          </td>
+                          <input class="form-control"  style="width:100pt;" name="other_date" type="text" id="other_date" value="<?=$other_date?>" size="35" maxlength="10"  readonly="readonly"/>                          </td>
                      </tr>
                      <tr>
                       <td align="left" class="fontBblue"><nobr>Name : </td>
                       <td align="left" class="fontBblue">
-                        <input type="hidden" name="other_receive_id" id="other_receive_id" value="<?=$other_receive_id?>" readonly="readonly">
-                        <input type="text" name="other_receive_name" id="other_receive_name" value="<?=$other_receive_name?>" style="width:250pt;" readonly="readonly"></td>
+                        <input class="form-control"  type="hidden" name="other_receive_id" id="other_receive_id" value="<?=$other_receive_id?>" readonly="readonly">
+                        <input class="form-control"  type="text" name="other_receive_name" id="other_receive_name" value="<?=$other_receive_name?>" style="width:250pt;" readonly="readonly"></td>
                      </tr>
                      <tr>
                             <td align="left" class="fontBblue"><nobr>Detail  : </td>
                            <td align="left" class="fontBblue">
-                           <input style="width:400pt;" name="other_description" type="text" id="other_description" value="<?=$c["other_description"]?>"/>  </td>
+                           <input class="form-control"  style="width:400pt;" name="other_description" type="text" id="other_description" value="<?=$c["other_description"]?>"/>  </td>
                      </tr>
                      <tr>
                            <td align="left" class="fontBblue"><nobr> From Date : </td>
                            <td align="left" class="fontBblue"><nobr>
-                           <input style="width:100pt;" name="other_real_godate" type="text" id="other_real_godate" value="<?=$other_real_godate?>" size="35" maxlength="10"  readonly="readonly"/>
+                           <input class="form-control"  style="width:100pt;" name="other_real_godate" type="text" id="other_real_godate" value="<?=$other_real_godate?>" size="35" maxlength="10"  readonly="readonly"/>
                           <a href="#" onclick="cdp1.showCalendar(this, 'other_real_godate'); return false;" >
                           <img src="image/calendar.png" width="17" height="13" border="0" /></a></td>
                   </tr >
                   <tr>
                            <td align="left" class="fontBblue"><nobr> To Date  : </td>
                            <td align="left" class="fontBblue"><nobr>
-                           <input style="width:100pt;" name="other_real_backdate" type="text" id="other_real_backdate" value="<?=$other_real_backdate?>" size="35" maxlength="10"  readonly="readonly"/>
+                           <input class="form-control"  style="width:100pt;" name="other_real_backdate" type="text" id="other_real_backdate" value="<?=$other_real_backdate?>" size="35" maxlength="10"  readonly="readonly"/>
                           <a href="#" onclick="cdp1.showCalendar(this, 'other_real_backdate'); return false;" >
                           <img src="image/calendar.png" width="17" height="13" border="0" /></a></td>
                   </tr >
@@ -168,7 +168,7 @@ $status_check = $c["status_check"];
                                 <?}?>
                            </select> <?=iconv('UTF-8','TIS-620',"(คืน)");?>
                         </td>
-                        <td width="15%" class="fontBblue" align="center"><input style="width:120pt;" type="text" name="other_rental" value="<?=$c["other_rental"];?>" id="other_rental" OnKeyPress="return chkNumber(this)"></td>
+                        <td width="15%" class="fontBblue" align="center"><input class="form-control"  style="width:120pt;" type="text" name="other_rental" value="<?=$c["other_rental"];?>" id="other_rental" OnKeyPress="return chkNumber(this)"></td>
                     </tr >
 					<?/*?>
                     <tr>
@@ -180,36 +180,36 @@ $status_check = $c["status_check"];
                                 <?}?>
                            </select> (�ѹ)
                         </td>
-                        <td width="15%" class="fontBblue" align="center"><input type="text" value="<?=$c["other_expenses_per"];?>" name="other_expenses_per" id="other_expenses_per" style="width:120pt;"></td>
+                        <td width="15%" class="fontBblue" align="center"><input class="form-control"  type="text" value="<?=$c["other_expenses_per"];?>" name="other_expenses_per" id="other_expenses_per" style="width:120pt;"></td>
                     </tr>
 					<?*/?>
                      <tr>
                         <td width="10%" class="fontBblue" align="center">2.</td>
                         <td width="40%" class="fontBblue" align="left">&nbsp;&nbsp;<?=iconv('UTF-8','TIS-620',"ค่าน้ำมันรถ/แก็ส");?></td>
-                        <td width="15%" class="fontBblue" align="center"><input type="text" value="<?=$c["other_gas_oil"];?>" name="other_gas_oil" id="other_gas_oil" style="width:120pt;" OnKeyPress="return chkNumber(this)"></td>
+                        <td width="15%" class="fontBblue" align="center"><input class="form-control"  type="text" value="<?=$c["other_gas_oil"];?>" name="other_gas_oil" id="other_gas_oil" style="width:120pt;" OnKeyPress="return chkNumber(this)"></td>
                     </tr >
                     <tr>
                         <td width="10%" class="fontBblue" align="center">3.</td>
                         <td width="40%" class="fontBblue" align="left">&nbsp;&nbsp;<?=iconv('UTF-8','TIS-620',"ค่าใช้จ่ายอื่นๆ");?>
-                           <input type="text" name="other_pay" id="other_pay" value="<?=$c["other_pay"]?>" style="width:280pt;">
+                           <input class="form-control"  type="text" name="other_pay" id="other_pay" value="<?=$c["other_pay"]?>" style="width:280pt;">
                         </td>
-                        <td width="15%" class="fontBblue" align="center"><input type="text" name="other_pay_total" value="<?=$c["other_pay_total"];?>" id="other_pay_total" style="width:120pt;" OnKeyPress="return chkNumber(this)"></td>
+                        <td width="15%" class="fontBblue" align="center"><input class="form-control"  type="text" name="other_pay_total" value="<?=$c["other_pay_total"];?>" id="other_pay_total" style="width:120pt;" OnKeyPress="return chkNumber(this)"></td>
                     </tr >
                    <?/*?> <tr>
                         <td width="10%" class="fontBblue" align="center">5.</td>
                         <td width="40%" class="fontBblue" align="left">&nbsp;&nbsp;��� Incentive </td>
-                        <td width="15%" class="fontBblue" align="center"><input type="text" name="incentive_total" value="<?=$c["incentive_total"]?>" id="incentive_total" style="width:120pt;"></td>
+                        <td width="15%" class="fontBblue" align="center"><input class="form-control"  type="text" name="incentive_total" value="<?=$c["incentive_total"]?>" id="incentive_total" style="width:120pt;"></td>
                     </tr ><?*/?>
                     <tr>
                         <td width="10%" class="fontBblue" align="center">4.</td>
                         <td width="40%" class="fontBblue" align="left">&nbsp;&nbsp;<?=iconv('UTF-8','TIS-620',"ค่าแก็ส/กม.");?></td>
                         <td width="15%" class="fontBblue" align="center">
-                            <input type="text" name="gasperkilo"  id="gasperkilo" value="<?=$_SESSION["Ugasperkilo"]?>" style="width:120pt;" OnKeyPress="return chkNumber(this)">
+                            <input class="form-control"  type="text" name="gasperkilo"  id="gasperkilo" value="<?=$_SESSION["Ugasperkilo"]?>" style="width:120pt;" OnKeyPress="return chkNumber(this)">
                         </td>
                     </tr >
                     <tr>
                         <td width="10%" class="fontBblue" colspan="2" align="center"><?=iconv('UTF-8','TIS-620',"รวมเป็นเงินทั้งหมด");?></td>
-                        <td width="15%" class="fontBblue" align="center"><input type="text" readonly="readonly"  name="other_total" value="<?=$c["other_total"];?>" id="other_total" style="width:120pt;bgcolor:red;" OnKeyPress="return chkNumber(this)"></td>
+                        <td width="15%" class="fontBblue" align="center"><input class="form-control"  type="text" readonly="readonly"  name="other_total" value="<?=$c["other_total"];?>" id="other_total" style="width:120pt;bgcolor:red;" OnKeyPress="return chkNumber(this)"></td>
                     </tr>
                 </table>
                 </form>
@@ -218,7 +218,7 @@ $status_check = $c["status_check"];
 
         <? if($id!=""){?>
               <form action="incentive.clear.execute.php" method="post" name="formDetail" target="_parent">
-                   <input type="hidden" name="id" id="id" value="<?=$id?>">
+                   <input class="form-control"  type="hidden" name="id" id="id" value="<?=$id?>">
                   <table width="100%" align="center" id="table" cellpadding="1" cellspacing="1" border="1">
             <tr>
 		<td width="5%" height="20" class="fontBblue" align="center"> <?=iconv('UTF-8','TIS-620',"วันที่");?></td>
@@ -230,8 +230,8 @@ $status_check = $c["status_check"];
             </tr>
             <tr>
 		<td width="7%" height="20" align="center">
-                <input type="text" onclick="cdp1.showCalendar(this, 'dte'); return false;" name="dte" id="dte" value="<?=$dte?>" style="width:55pt;"></td>
-                <td height="20" align="center"><input type="text" name="other_seq" id="other_seq" style="width:55pt;" readonly="readonly" ></td>
+                <input class="form-control"  type="text" onclick="cdp1.showCalendar(this, 'dte'); return false;" name="dte" id="dte" value="<?=$dte?>" style="width:55pt;"></td>
+                <td height="20" align="center"><input class="form-control"  type="text" name="other_seq" id="other_seq" style="width:55pt;" readonly="readonly" ></td>
 		<td height="20" align="center">
 						<select name="fee_type" id="fee_type" style="width:55pt;">
 							<option value="1" id="1"><?=iconv('UTF-8','TIS-620',"ค่าแก็ส");?></option>
@@ -243,13 +243,13 @@ $status_check = $c["status_check"];
 							<option value="7" id="7"><?=iconv('UTF-8','TIS-620',"ค่าซ่อมรถ");?></option>
 							<option value="8" id="8"><?=iconv('UTF-8','TIS-620',"ค่าอื่นๆ");?></option>
 						</select></td>
-                <td height="20" align="center"><input type="text" name="bill_description" id="bill_description" style="width:400pt;"></td>
-                <td height="20" align="center"><input type="text" name="bill_no" id="bill_no" style="width:150pt;"></td>
-                <td height="20" align="center"><input type="text" name="bill_total" id="bill_total" style="width:150pt;" OnKeyPress="return chkNumber(this)"></td>
+                <td height="20" align="center"><input class="form-control"  type="text" name="bill_description" id="bill_description" style="width:400pt;"></td>
+                <td height="20" align="center"><input class="form-control"  type="text" name="bill_no" id="bill_no" style="width:150pt;"></td>
+                <td height="20" align="center"><input class="form-control"  type="text" name="bill_total" id="bill_total" style="width:150pt;" OnKeyPress="return chkNumber(this)"></td>
                 <td height="20" width="7%" align="center">
                 <? if($status_check == ""){?>
                     <img  onclick="click2clrtext();" src="image/cancel.jpg" alt="Clear Text" width="18" height="18" border="0" align="center" />
-                    <input name="Submit"  type="image" onclick="return chkDetail();"  src="image/save.jpg" alt="Save" align="center" width="18" height="18" />
+                    <input class="form-control"  name="Submit"  type="image" onclick="return chkDetail();"  src="image/save.jpg" alt="Save" align="center" width="18" height="18" />
                 <?}?>
                 </td>
            </tr>
@@ -301,19 +301,19 @@ $status_check = $c["status_check"];
              while($c1 = mysql_fetch_array($rs1)){    // $c1["total_funds"]
              $tttot = $tot - $ttotal;
            ?>
-           <input type="hidden" value="<?=$ttotal;?>" name="ttotal" id="ttotal">
-           <input type="hidden" value="<?=$tot;?>" name="tot" id="tot">
+           <input class="form-control"  type="hidden" value="<?=$ttotal;?>" name="ttotal" id="ttotal">
+           <input class="form-control"  type="hidden" value="<?=$tot;?>" name="tot" id="tot">
                <tr>
                 <td height="20" align="center" colspan="3" class="fontBblue">��������Թ�������㹡����ԡ : </td>
                 <td height="20" align="center">
-                <input type="hidden" name="id" id="id" value="<?=$id?>">
+                <input class="form-control"  type="hidden" name="id" id="id" value="<?=$id?>">
                         <select name="status_funds" id="status_funds" style="width:80pt;">
                             <option value="�����/�׹" <? if($c1["status_funds"]=="�����/�׹") echo "selected";?>>�����/�׹</option>
                             <option value="��ԡ�����" <? if($c1["status_funds"]=="��ԡ�����") echo "selected";?>>��ԡ�����</option>
                         </select>
                 </td>
                 <td height="20" align="center" >
-                <input type="text" readonly="readonly" value="<?=$tttot?>" name="total_funds" id="total_funds" style="width:80pt;"></td>
+                <input class="form-control"  type="text" readonly="readonly" value="<?=$tttot?>" name="total_funds" id="total_funds" style="width:80pt;"></td>
                 <td height="20" align="center">&nbsp;
                 <!--img  type="image" onclick="click2updatefunds('<?=$id?>',status_funds.value,total_funds.value);"  src="image/save.jpg" alt="Save" align="cennter" width="20" height="20" /--></td>
            </tr>

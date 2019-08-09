@@ -98,12 +98,12 @@ $(document).ready(function(){
                     <tr>
                       <td width="20%" height="20" align="left" class="fontBblue" >ID :  </td>
                       <td width="80%" align="left" class="fontBblue" colspan="4">                   
-                      <input type="text" name="user_id" id="user_id" value="<?=$c["user_id"];?>" style="width:100pt" readonly="readonly"></td>          
+                      <input class="form-control"  type="text" name="user_id" id="user_id" value="<?=$c["user_id"];?>" style="width:100pt" readonly="readonly"></td>          
                   </tr >
                    <tr>
                       <td width="20%" height="20" align="left" class="fontBblue" >Name :  </td>  
                       <td width="80%" align="left" class="fontBblue" colspan="4">                   
-                      <input type="text" name="customer_name" id="customer_name" value="<?=$c["name"]." ".$c["sname"];?>" style="width:200pt" readonly="readonly"></td>          
+                      <input class="form-control"  type="text" name="customer_name" id="customer_name" value="<?=$c["name"]." ".$c["sname"];?>" style="width:200pt" readonly="readonly"></td>          
                   </tr >
                     
                     <tr>

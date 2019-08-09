@@ -58,7 +58,7 @@ while($c_lot = mysqli_fetch_array($rs_lot)){
 <? } ?>
 </select>
 
-<input type="submit" value="Search">
+<input class="form-control"  type="submit" value="Search">
 </form>
 <?
 
@@ -74,18 +74,18 @@ $c_lot_select = mysqli_fetch_array($rs_lot_select);  ?>
 <table class="warry">
          <tr>
             <td width="30%" align="right">Hardware Lot :</td>
-            <td><input type="text" name="lot" value="<?=$c_lot_select["comment_lot"]?>" readonly style="width: 250px"></td>
+            <td><input class="form-control"  type="text" name="lot" value="<?=$c_lot_select["comment_lot"]?>" readonly style="width: 250px"></td>
          </tr>
          <tr>
             <td align="right">Warranty Date :</td>
-            <td><input type="date" name="warr" value="<?=$c_lot_select["warranty_hardware_type_date"]?>"></td>
+            <td><input class="form-control"  type="date" name="warr" value="<?=$c_lot_select["warranty_hardware_type_date"]?>"></td>
          </tr>
          <tr>
             <td align="right">Expired Date :</td>
-            <td><input type="date" name="expried" value="<?=$c_lot_select["expired_hardware_type_date"]?>"></td>
+            <td><input class="form-control"  type="date" name="expried" value="<?=$c_lot_select["expired_hardware_type_date"]?>"></td>
          </tr>
          <tr>
-            <td colspan="2" align="center"><input type="submit" value="Save" onclick="return confirm('Are you sure?');"></td>
+            <td colspan="2" align="center"><input class="form-control"  type="submit" value="Save" onclick="return confirm('Are you sure?');"></td>
          </tr>
 </table>
 </form>

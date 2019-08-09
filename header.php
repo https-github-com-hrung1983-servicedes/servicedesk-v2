@@ -16,7 +16,39 @@ require_once("function.php");
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-874">
-   
+    <!--script language="javascript" src="script/script.js"></script-->
+    <link href="image/bss_icon.ico"   rel="shortcut icon" />
+    <link href="style/calendar.css" rel="stylesheet" type="text/css">
+    <link href="style/mytable.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="script/calendar_date_picker.js"></script>
+    <link href="style/stylecss.css" rel="stylesheet" type="text/css">
+    <link href="style/filtergrid.css" rel="stylesheet" type="text/css">
+    <script src="script/jquery.min.js"></script>
+    <script src="script/thickbox.js"></script>
+    <script src="script/loading.js"></script>
+	<link rel="stylesheet" href="css/w3.css" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="css/loading.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link href="css/all.css" rel="stylesheet"> <!--load all styles  font awesome-->
+	
+	<script language="javascript">
+	function w3_open() {
+	
+	  document.getElementById("mySidebar").style.display = "block";
+	   
+	}
+
+	function w3_close() {
+	  document.getElementById("mySidebar").style.display = "none";
+	   
+	}
+	
+	w3_close();
+	</script>
+
 <style type="text/css">
 
 body {
@@ -27,8 +59,63 @@ body {
 	margin-bottom: 0px;
 
 }
+ 
 
-</style></head>
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 3s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #00FF00;
+  display: block;
+  transition: 3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: white;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+
+
+
+
+</head>
 <title>Bizserv Solution Co.,Ltd</title>
 <body>
 <center >
@@ -436,6 +523,59 @@ stm_em();
     </td>
   </tr>
   </table>
+
 </center>
+
+
+<button class="w3-button w3-teal w3-xlarge" onclick="w3_open()"  ><i class="fa fa-bars"></i></button>
+<div class="w3-sidebar w3-bar-block" id="mySidebar" style="display:none;background-color:#028e1b;width:280pt;transition: 3s" >
+
+<button onclick="w3_close()" class="w3-bar-item w3-button w3-large" style="background-color:#e1e3e8">Close &times;</button>
+  <a href="dashboard.php" onclick="w3_close()" class="w3-bar-item w3-button">Dashboard</a> 
+   <div class="w3-dropdown-hover">
+    <button class="w3-button">Logcall center <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-bar-block" style="margin-left:70pt;">
+      <a href="logcall.retail.index.php" onclick="w3_close()" class="w3-bar-item w3-button">Logcall center</a>
+      <a href="logcall.retail.index1.php" onclick="w3_close()" class="w3-bar-item w3-button">Service Report</a>
+	  <a href="logcall.retail.index2.php" onclick="w3_close()" class="w3-bar-item w3-button">Job Report per Month</a>
+	  <a href="summary.hwbysite.php" onclick="w3_close()" class="w3-bar-item w3-button">Summary HW</a>
+    </div>
+  </div>
+    <div class="w3-dropdown-hover">
+    <button class="w3-button">Setting<i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-bar-block" style="margin-left:70pt;">
+      <a href="branch.manager.php" onclick="w3_close()" class="w3-bar-item w3-button">Branch Management</a>
+	  <a href="hardware.category.index.php" onclick="w3_close()" class="w3-bar-item w3-button">Category Hardware Management</a>
+	  <a href="job.category.index.php" onclick="w3_close()" class="w3-bar-item w3-button">Category Job Management</a>
+	  <a href="job.reasonsla.index.php" onclick="w3_close()" class="w3-bar-item w3-button">Reason SLA Management</a>
+	  <a href="stock.index.php" onclick="w3_close()" class="w3-bar-item w3-button">Stock</a>
+	  <a href="repair.index.php" onclick="w3_close()" class="w3-bar-item w3-button">Repair</a>
+	  <a href="rename_jobno.php" onclick="w3_close()" class="w3-bar-item w3-button">Rename Job</a>
+	  <a href="del_job.php" onclick="w3_close()" class="w3-bar-item w3-button">Delete Job</a>
+    </div>
+  </div>
+  
+      <div class="w3-dropdown-hover">
+    <button class="w3-button">Report<i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-bar-block" style="margin-left:70pt;">
+      <a href="serial_movement.php" onclick="w3_close()" class="w3-bar-item w3-button">Serial Movement</a>
+      <a href="serial_all.php" onclick="w3_close()" class="w3-bar-item w3-button">Serial Summary</a>
+	  <a href="../location_user.php" onclick="w3_close()" class="w3-bar-item w3-button">Map Location</a>
+	  <a href="check.serial.no.php" onclick="w3_close()" class="w3-bar-item w3-button">Serial No.</a>
+
+    </div>
+  </div>
+  
+  <a href="change_password_form.php" onclick="w3_close()" class="w3-bar-item w3-button">Change password</a> 
+<a href="logout.php" onclick="w3_close()" class="w3-bar-item w3-button">Logout</a>
+</div>
+	
+	
+
+
+  </table>
+  <div style="height:20pt">
+  </div>
+
 </body>
 </html>

@@ -141,7 +141,7 @@ require_once("script/function.js");
         </tr>
        <?}}?>
         </table>
-		<input type="button" name="home" id="home" value="Go home" onClick="SelectedVal('xxxx','xxxx','Office')">
+		<input class="form-control"  type="button" name="home" id="home" value="Go home" onClick="SelectedVal('xxxx','xxxx','Office')">
    </form>     
 </center>
 </body>

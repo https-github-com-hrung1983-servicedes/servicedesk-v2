@@ -25,8 +25,8 @@ $job_serch=$_GET["job_serch"];
 <form action="<?php echo $_SERVER['SCRIPT_NAME'];?>"  method="GET"  name="form1" id="form1">
 <center>
 <div style="padding: 1px;">
-<input type="text" style="width:300px;" name="job_serch" id="job_serch" value="">
-<input type="submit" name="submit" class="submit" value="Search">
+<input class="form-control"  type="text" style="width:300px;" name="job_serch" id="job_serch" value="">
+<input class="form-control"  type="submit" name="submit" class="submit" value="Search">
 </div>
 </form>
 <? 	   if($job_serch != ''){
@@ -42,20 +42,20 @@ $job_serch=$_GET["job_serch"];
 	   $obj_job = mysqli_query($conn,$sql_job);
 	   while($re_job = mysqli_fetch_array($obj_job)){
 		?>
-		<input type="hidden" style="width:200px;" name="job_id" id="job_id" value="<?=$re_job["id"]?>">
+		<input class="form-control"  type="hidden" style="width:200px;" name="job_id" id="job_id" value="<?=$re_job["id"]?>">
 		<br>
 	   <table style="padding: 20px; border: solid; width: 350px; font-size: 14px;">
 	   <tr>
 			  <td align="right">JobNo.</td>
 			  <td><?=$re_job["job_no"]?>
-					 <input type="hidden" style="width:200px;" name="job_no" id="job_no" value="<?=$re_job["job_no"]?>" readonly></td>
+					 <input class="form-control"  type="hidden" style="width:200px;" name="job_no" id="job_no" value="<?=$re_job["job_no"]?>" readonly></td>
 	   </tr>
 	   <tr>
 			  <td align="right">New JobNo.</td>
-			  <td><input type="text" style="width:200px;" name="job_rename" id="job_rename" value=""></td>
+			  <td><input class="form-control"  type="text" style="width:200px;" name="job_rename" id="job_rename" value=""></td>
 	   </tr>
 	   <tr>
-			  <td colspan=2 align="center"><input type="submit" name="submit" class="submit" value="Rename"></td>
+			  <td colspan=2 align="center"><input class="form-control"  type="submit" name="submit" class="submit" value="Rename"></td>
 	   </tr>  
 		</table>
 	   <? } ?>

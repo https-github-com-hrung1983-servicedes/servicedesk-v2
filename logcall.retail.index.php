@@ -159,12 +159,12 @@ echo $sql;
                                 <option value="14" <?if($type == "14") echo "selected";?>><?=iconv('UTF-8','TIS-620',"Category Job");?></option>
                                 <option value="15" <?if($type == "15") echo "selected";?>><?=iconv('UTF-8','TIS-620',"Engineer");?></option>
                             </select>
-                            <input type="text" style="width:90pt;" name="schTxt" id="schTxt" value="<?=$schTxt ?>">
+                            <input class="form-control"  type="text" style="width:90pt;" name="schTxt" id="schTxt" value="<?=$schTxt ?>">
                             <b>&nbsp;<?=iconv('UTF-8','TIS-620',"วันที่");?>  :</b>
-                            <input style="width:60pt;" name="date_beg"  type="text" onclick="cdp1.showCalendar(this, 'date_beg');return false;" id="date_beg" value="<?=$dte_beg;?>" size="35" maxlength="10" />
+                            <input class="form-control"  style="width:60pt;" name="date_beg"  type="text" onclick="cdp1.showCalendar(this, 'date_beg');return false;" id="date_beg" value="<?=$dte_beg;?>" size="35" maxlength="10" />
                              <span class="fonttitle_board">&nbsp;-&nbsp;</span>
-                            <input style="width:60pt;" name="date_end"  type="text" onclick="cdp1.showCalendar(this, 'date_end');return false;" id="date_end" value="<?=$dte_end;?>" size="35" maxlength="10" />
-                            &nbsp;<input  type="button" name="sch" value="<?=iconv('UTF-8','TIS-620',"Search");?>"
+                            <input class="form-control"  style="width:60pt;" name="date_end"  type="text" onclick="cdp1.showCalendar(this, 'date_end');return false;" id="date_end" value="<?=$dte_end;?>" size="35" maxlength="10" />
+                            &nbsp;<input class="form-control"   type="button" name="sch" value="<?=iconv('UTF-8','TIS-620',"Search");?>"
                              onclick="Search_Click(schBy.value,schTxt.value,date_beg.value,date_end.value)" style="width:50pt;">
                             &nbsp;
                         </td>

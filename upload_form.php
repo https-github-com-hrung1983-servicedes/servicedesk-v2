@@ -98,19 +98,19 @@ $(document).ready(function() {
   <tr>
     <td>
 <form name="form1" method="post" action="#" enctype="multipart/form-data" onSubmit="JavaScript:return fncSubmit();">
-  Folder Name : <input type="text" name="fupload" id="fupload" value="<?=$fupload?>"><br>
-	<input type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
-	<input type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
-	<input type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
-  <input type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
-  <input type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
-  <input type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
-  <input type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
-  <input type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
-  <input type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
-  <input type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
+  Folder Name : <input class="form-control"  type="text" name="fupload" id="fupload" value="<?=$fupload?>"><br>
+	<input class="form-control"  type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
+	<input class="form-control"  type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
+	<input class="form-control"  type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
+  <input class="form-control"  type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
+  <input class="form-control"  type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
+  <input class="form-control"  type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
+  <input class="form-control"  type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
+  <input class="form-control"  type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
+  <input class="form-control"  type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
+  <input class="form-control"  type="file" name="file_upload[]" id="file_upload[]" class="input_upload"><br>
   <br>
-	<input name="btnSubmit" type="submit" value="Upload" class="btn_upload">
+	<input class="form-control"  name="btnSubmit" type="submit" value="Upload" class="btn_upload">
 
 </div>
 <? if($fupload !=""){ ?>

@@ -57,7 +57,7 @@ if($cate_id==""){
 			</td>	
 			<td><nobr>
 			</td><td>
-				<input name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />
+				<input class="form-control"  name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />
 			</td>	
 <td><b>
 	Save</b>
@@ -91,9 +91,9 @@ if($cnt_job==1){
 }
 ?>
 		<tr>
-                      <td width="30%" align="center"><nobr><input name="site_id" id="site_id" value="<?=$siteid;?>" style="width:150pt" />&nbsp;
-		<input  type="button" name="sch" value="Search"  onclick="Search_Click(site_id.value)" style="width:50pt;"></td>                                 
-                      <td width="70%"><nobr><input name="site_name" id="site_name" value="<?=$c['site_name'];?>" style="width:750pt" readonly /></td>  
+                      <td width="30%" align="center"><nobr><input class="form-control"  name="site_id" id="site_id" value="<?=$siteid;?>" style="width:150pt" />&nbsp;
+		<input class="form-control"   type="button" name="sch" value="Search"  onclick="Search_Click(site_id.value)" style="width:50pt;"></td>                                 
+                      <td width="70%"><nobr><input class="form-control"  name="site_name" id="site_name" value="<?=$c['site_name'];?>" style="width:750pt" readonly /></td>  
 		</tr>
 	  </table>
 <br>
@@ -117,8 +117,8 @@ if($cnt_job==1){
 				<option value="<?=$rs_col['cate_id']?>" <? if($cate_id==$rs_col["cate_id"]) echo "selected";?>><?=$rs_col['cate_name']?></option>
 		<?}?>			
 			</select></td> 
-                      <td><input type='hidden' name="sn_old" id="sn_old" value="<?=$c['id']?>" style="width:195pt" readonly />
-			  <input name="hardware_name" id="hardware_name" value="<?=$c['hardware_no']?>" style="width:195pt" readonly /></td>  
+                      <td><input class="form-control"  type='hidden' name="sn_old" id="sn_old" value="<?=$c['id']?>" style="width:195pt" readonly />
+			  <input class="form-control"  name="hardware_name" id="hardware_name" value="<?=$c['hardware_no']?>" style="width:195pt" readonly /></td>  
                       <td>
 			
 <?

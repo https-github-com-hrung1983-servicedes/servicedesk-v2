@@ -70,12 +70,12 @@ body {
         }
     </script>
      <td>
-    Folder name : <input type="text" name="foldername" id="foldername">  </td>  
-    <td>Select file : <input type="file" name="filUpload" id="filUpload"> </td>
+    Folder name : <input class="form-control"  type="text" name="foldername" id="foldername">  </td>  
+    <td>Select file : <input class="form-control"  type="file" name="filUpload" id="filUpload"> </td>
     </tr>
     <tr>
         <th colspan="3">
-            <input type="submit" name="submit" value="Upload">&nbsp;&nbsp;<input type="reset" name="cancel" value="Cancel">
+            <input class="form-control"  type="submit" name="submit" value="Upload">&nbsp;&nbsp;<input class="form-control"  type="reset" name="cancel" value="Cancel">
         </th>
     </tr>
 </form>

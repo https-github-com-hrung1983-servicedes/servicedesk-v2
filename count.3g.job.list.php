@@ -89,7 +89,7 @@ include("header.php");
                                 <option value = "2014" <? if($years==2014) echo "selected";?> >2014</option>          
                                 <option value = "2015" <? if($years==2015) echo "selected";?> >2015</option>                      
                             </select> 
-                            &nbsp;<input  type="button" name="sch" value="แสดง"  onclick="Search_Click(typer.value,months.value,years.value)"style="width:50pt;">
+                            &nbsp;<input class="form-control"   type="button" name="sch" value="แสดง"  onclick="Search_Click(typer.value,months.value,years.value)"style="width:50pt;">
                             
                         <td width="18" valign="middle"><a lang="count.3g.job.form.php?type=add" class="thickbox pointer">
                         <img src="image/add.JPG" alt="Add" width="20" height="20" border="0" align="right"> </a></td>

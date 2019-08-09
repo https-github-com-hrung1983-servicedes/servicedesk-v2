@@ -89,15 +89,15 @@ $(document).ready(function(){
     <tr>                                               
         <td valign="top" align="center">                                                       
             <form action=""  method="post"  name="form1" id="form1"  >
-            <input type="hidden" name="job_id" id="job_id" value="<?=$id;?>" style="width:100pt" readonly="readonly">       <input type="hidden" name="dte_beg" id="dte_beg" value="<?=$dte_beg?>">                               
-			<input type="hidden" name="dte_end" id="dte_end" value="<?=$dte_end?>">                         
+            <input class="form-control"  type="hidden" name="job_id" id="job_id" value="<?=$id;?>" style="width:100pt" readonly="readonly">       <input class="form-control"  type="hidden" name="dte_beg" id="dte_beg" value="<?=$dte_beg?>">                               
+			<input class="form-control"  type="hidden" name="dte_end" id="dte_end" value="<?=$dte_end?>">                         
                 <table border="0" cellpadding="0" cellspacing="0" class="mytable" border="1" bordercolor="#FF0000">
                     <tr>
                         <th align="center" height="40" colspan="6" class="th">Log Call Center (BSS)</th>                    
                     </tr >
                     
                     <tr>
-                        <td bgcolor="white" width="95%" ><input name="Submit" id="Submit"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
+                        <td bgcolor="white" width="95%" ><input class="form-control"  name="Submit" id="Submit"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
                        <td align="left" bgcolor="white" width="10%"><b>บันทึก</b>    </td>
 					   <td><a href="javascript:history.back(1)" ><img src="image/cancel.jpg" alt="Cancel" width="20" height="18" border="0" align="left" /> </a> </td>
 					   <td align="left"><nobr><b> ยกเลิก</b>     </td>
@@ -105,17 +105,17 @@ $(document).ready(function(){
                 </table>
                 <br>
                 <table align="center"  id="table" cellpadding="1" cellspacing="1" border="0">
-				<input type="hidden" name="logfrom" id="logfrom" value="<?=$c["logfrom"];?>" style="width:150pt" readonly>
+				<input class="form-control"  type="hidden" name="logfrom" id="logfrom" value="<?=$c["logfrom"];?>" style="width:150pt" readonly>
                     <tr>
                       <td height="20" width="30%" align="left" class="fontBblue" >Job no. :  </td> 
                       <td height="20" width="70%" align="left" class="fontBblue">                   
-					  <input type="text" name="job_no" id="job_no" value="<?=$c["job_no"]?>" style="width:150pt" >
+					  <input class="form-control"  type="text" name="job_no" id="job_no" value="<?=$c["job_no"]?>" style="width:150pt" >
 						</td>          
                     </tr>
 					<tr>
                       <td height="20" width="30%" align="left" class="fontBblue" >Job date. :  </td>  
                       <td height="20" width="70%" align="left" class="fontBblue">                   
-						<input type="text" name="job_date" id="job_date" style="width:150pt" readonly onclick="cdp1.showCalendar(this, 'job_date');return false;" value="<?=$job_date?>"></td>          
+						<input class="form-control"  type="text" name="job_date" id="job_date" style="width:150pt" readonly onclick="cdp1.showCalendar(this, 'job_date');return false;" value="<?=$job_date?>"></td>          
                     </tr >
 					  <!--tr>
 						  <td height="20" width="30%" align="left" class="fontBblue" >Job type :  </td>  
@@ -149,14 +149,14 @@ $(document).ready(function(){
 		   <tr>
                       <td height="20" align="left" class="fontBblue" ><nobr>Contact  :</td>
                       <td height="20" align="left" class="fontBblue" ><nobr>
-                        <input name="cmbCateType" type="text" id="cmbCateType" value="<?=$c['fixed_description'];?>"  style="width:275pt"  readonly/></td>
+                        <input class="form-control"  name="cmbCateType" type="text" id="cmbCateType" value="<?=$c['fixed_description'];?>"  style="width:275pt"  readonly/></td>
                      </tr>
 
                     <tr>
                       <td height="20" align="left" class="fontBblue" ><nobr>Category type  :</td>
                       <td height="20" align="left" class="fontBblue" ><nobr>
-                        <input name="CateTypeID" id="CateTypeID" type="hidden" value="<?=$c['category_type'];?>">
-                        <input name="cmbCateType" type="text" id="cmbCateType" value="<?=$c['fixed_description'];?>"  style="width:275pt"  readonly/>
+                        <input class="form-control"  name="CateTypeID" id="CateTypeID" type="hidden" value="<?=$c['category_type'];?>">
+                        <input class="form-control"  name="cmbCateType" type="text" id="cmbCateType" value="<?=$c['fixed_description'];?>"  style="width:275pt"  readonly/>
                       <a href="javascript:getCategoryType('CateTypeID','cmbCateType')">
                       <img src="image/search.gif" alt="เลือกประเภทปัญหา" width="26" height="22" border="0" align="top"/></a></td>
                      </tr>
@@ -166,17 +166,17 @@ $(document).ready(function(){
                    <tr>
                       <td height="20" width="30%" height="20" align="left" class="fontBblue" >Job problem :  </td>  
                       <td height="20" width="70%" align="left" class="fontBblue">                   
-                      <input type="text" name="job_problem" id="job_problem" value="<?=$c['job_problem'];?>" style="width:300pt"></td>          
+                      <input class="form-control"  type="text" name="job_problem" id="job_problem" value="<?=$c['job_problem'];?>" style="width:300pt"></td>          
                   </tr >
                    <tr>
                       <td height="20" width="30%" height="20" align="left" class="fontBblue" >Job solution :  </td>  
                       <td height="20" width="70%" align="left" class="fontBblue">                   
-                      <input type="text" name="job_solution" id="job_solution" value="<?=$c['job_solution'];?>" style="width:300pt"></td>          
+                      <input class="form-control"  type="text" name="job_solution" id="job_solution" value="<?=$c['job_solution'];?>" style="width:300pt"></td>          
                   </tr >
                    <tr>
                       <td height="20" width="30%" height="20" align="left" class="fontBblue" >Job start date :  </td>  
                       <td height="20" width="70%" align="left" class="fontBblue">                   
-                      <input type="text" name="job_start_date" id="job_start_date" value="<?=$c['job_start_date'];?>" readonly style="width:150pt">
+                      <input class="form-control"  type="text" name="job_start_date" id="job_start_date" value="<?=$c['job_start_date'];?>" readonly style="width:150pt">
 					  <a href="#" onclick="cdp1.showCalendar(this, 'job_start_date'); return false;" > 
                           <img src="image/calendar.png" width="17" height="13" border="0" /></a><nobr> HH :  
                           <?
@@ -202,7 +202,7 @@ $(document).ready(function(){
 				  <tr>
                       <td height="20" width="30%" height="20" align="left" class="fontBblue" >Job end time :  </td>  
                       <td height="20" width="70%" align="left" class="fontBblue">                   
-                      <input type="text" name="job_end_date" id="job_end_date" value="<?=$c['job_end_date'];?>" readonly style="width:150pt"><a href="#" onclick="cdp1.showCalendar(this, 'job_end_date'); return false;" > 
+                      <input class="form-control"  type="text" name="job_end_date" id="job_end_date" value="<?=$c['job_end_date'];?>" readonly style="width:150pt"><a href="#" onclick="cdp1.showCalendar(this, 'job_end_date'); return false;" > 
                           <img src="image/calendar.png" width="17" height="13" border="0" /></a>
 					 <nobr> HH :  
                           <?
@@ -228,21 +228,21 @@ $(document).ready(function(){
                    <tr>
                       <td height="20" width="30%" height="20" align="left" class="fontBblue" >Job reciept user :  </td>  
                       <td height="20" width="70%" align="left" class="fontBblue">               
-                      <input type="hidden" name="job_reciept_user_idx" id="job_reciept_user_idx" value="<?=$c["job_reciept_user_id"];?>" style="width:150pt">
-					  <input type="text" name="job_reciept_user_name" id="job_reciept_user_id" value="" style="width:150pt">
+                      <input class="form-control"  type="hidden" name="job_reciept_user_idx" id="job_reciept_user_idx" value="<?=$c["job_reciept_user_id"];?>" style="width:150pt">
+					  <input class="form-control"  type="text" name="job_reciept_user_name" id="job_reciept_user_id" value="" style="width:150pt">
 					  <a href="javascript:getUser('bsslogcalluser','BSS')"><img src="image/search.gif" alt="เลือกสถานี" width="26" height="22" border="0" align="top" /></a></td>          
                   </tr > <?*/?> 
                    <tr>
                       <td height="20" width="30%" height="20" align="left" class="fontBblue" >Job engineer reciept :  </td>  
                       <td height="20" width="70%" align="left" class="fontBblue">                   
-                      <input type="hidden" name="job_engineer_reciept_id" id="job_engineer_reciept_id" value="<?=$c["job_engineer_reciept_id"];?>" style="width:150pt">        
-                      <input type="text" name="job_engineer_reciept_name" id="job_engineer_reciept_name" value="<?=$c["name"]." ".$c["sname"]."  (".$c["tel"].")";?>" style="width:150pt">
+                      <input class="form-control"  type="hidden" name="job_engineer_reciept_id" id="job_engineer_reciept_id" value="<?=$c["job_engineer_reciept_id"];?>" style="width:150pt">        
+                      <input class="form-control"  type="text" name="job_engineer_reciept_name" id="job_engineer_reciept_name" value="<?=$c["name"]." ".$c["sname"]."  (".$c["tel"].")";?>" style="width:150pt">
 					  <a href="javascript:getUser('bsslogcalleng','BSS')"><img src="image/search.gif" alt="เลือกสถานี" width="26" height="22" border="0" align="top" /></a></td>          
                   </tr >
                    <tr>
                       <td height="20" width="30%" height="20" align="left" class="fontBblue" >Job referance :  </td>  
                       <td height="20" width="70%" align="left" class="fontBblue">                   
-                      <input type="text" name="job_referance_id" id="job_referance_id" value="<?=$c["job_referance_id"];?>" style="width:150pt" readonly></td>          
+                      <input class="form-control"  type="text" name="job_referance_id" id="job_referance_id" value="<?=$c["job_referance_id"];?>" style="width:150pt" readonly></td>          
                   </tr >
                    <tr>
                       <td height="20" width="30%" height="20" align="left" class="fontBblue" >Job status :  </td>  
@@ -258,10 +258,10 @@ $(document).ready(function(){
 
 <br><br>
 
-<input type="hidden" id="txtSidProvince" name="txtSidProvince">
-<input type="hidden" id="province_phase" name="province_phase">
-<input type="hidden" id="way_length" name="way_length">
-<input type="hidden" id="cmbServiceType" name="cmbServiceType">
+<input class="form-control"  type="hidden" id="txtSidProvince" name="txtSidProvince">
+<input class="form-control"  type="hidden" id="province_phase" name="province_phase">
+<input class="form-control"  type="hidden" id="way_length" name="way_length">
+<input class="form-control"  type="hidden" id="cmbServiceType" name="cmbServiceType">
             </form></td></tr></table>
 
 

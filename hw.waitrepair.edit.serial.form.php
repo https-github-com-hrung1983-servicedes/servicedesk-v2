@@ -118,13 +118,13 @@ function getKey(){
     <tr>
         <td valign="top" align="center">
             <form action=".execute.php"  method="post"  name="form1" id="form1"  >
-			<input  type="hidden" value="<?=$id?>" name="id_sn" id="id_sn" />
-			<input  type="hidden" value="<?=$status_sch?>" name="status_sch" id="status_sch" />
+			<input class="form-control"   type="hidden" value="<?=$id?>" name="id_sn" id="id_sn" />
+			<input class="form-control"   type="hidden" value="<?=$status_sch?>" name="status_sch" id="status_sch" />
                 <table border="0" cellpadding="0" cellspacing="0" class="mytable" border="1"  bordercolor="#FF0000">
 
                     <tr>
                         <td bgcolor="white" width="95%" align="right" colspan="2" >
-						<input name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
+						<input class="form-control"  name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
                        <td align="left" bgcolor="white" width="10%"><b>Save</b>    </td>
                      </tr>
 					 <tr>
@@ -151,7 +151,7 @@ function getKey(){
 		    <tr>
                       <td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Serial No.  :  </td>
                       <td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-		      <input type="text" readonly value="<?=$c["hardware_no"]?>" name="serialno" id="serialno" style="width:250pt" >
+		      <input class="form-control"  type="text" readonly value="<?=$c["hardware_no"]?>" name="serialno" id="serialno" style="width:250pt" >
 		     </td>
 		    </tr>
  	<? if($c["cate_id"]=="1" || $c["cate_id"]=="53" || $c["cate_id"]=="70"){
@@ -164,7 +164,7 @@ function getKey(){
 		<tr id="license_windows_nox">
 		  <td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;<nobr><?=iconv('UTF-8','TIS-620',"License Windows");?> :  </td>
 		  <td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-			 <input type="text" <?=$str_readonly?> name="license_windows_no" id="license_windows_no" value="<?=$c["license_windows_no"]?>" style="width:250pt" >
+			 <input class="form-control"  type="text" <?=$str_readonly?> name="license_windows_no" id="license_windows_no" value="<?=$c["license_windows_no"]?>" style="width:250pt" >
 			 </td>
                 </tr>
        <?}?>
@@ -263,7 +263,7 @@ function getKey(){
 	       <tr>
 		    <td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Comment (lot) :</td>
 		    <td height="25" bgcolor="white"  colspan="3" >
-		    <input type="text" name="comment_lot" id="comment_lot" value="<?=$c["comment_lot"]?>" style="width:250pt">
+		    <input class="form-control"  type="text" name="comment_lot" id="comment_lot" value="<?=$c["comment_lot"]?>" style="width:250pt">
 			</td>
 	       </tr>
 	       <?}?>

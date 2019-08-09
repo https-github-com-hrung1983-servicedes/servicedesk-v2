@@ -188,7 +188,7 @@ img{
 
        <? } ?>
        </select>
-       <input type="submit" value="Search">
+       <input class="form-control"  type="submit" value="Search">
     <div class="report_name">GPS MANAGER</div>
     </div>
   </form>

@@ -80,7 +80,7 @@ $(document).ready(function(){
     <tr>
         <td valign="top" align="center">
             <form action=".execute.php"  method="post"  name="form1" id="form1"  >
-			<input  type="hidden" value="<?=$id?>" name="id_rep" id="id_rep" />
+			<input class="form-control"   type="hidden" value="<?=$id?>" name="id_rep" id="id_rep" />
                 <table border="0" cellpadding="0" cellspacing="0" class="mytable" border="1"  bordercolor="#FF0000">
                     <tr>
                         <th align="center" height="40" colspan="3" class="th">Hardware Repairing</th>
@@ -88,7 +88,7 @@ $(document).ready(function(){
 
                     <tr>
                         <td bgcolor="white" width="95%" align="right" colspan="2" >
-						<input name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
+						<input class="form-control"  name="Save" id="Save"  type="image" src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
                        <td align="left" bgcolor="white" width="10%"><b>Save</b>    </td>
 
 					 <tr>
@@ -102,13 +102,13 @@ $(document).ready(function(){
 					<tr>
                       <td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Serial No.  :  </td>
                       <td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					 <input type="text" name="serialno" id="serialno" style="width:250pt"  value="<?=$c["hardware_no"]?>" readonly>
+					 <input class="form-control"  type="text" name="serialno" id="serialno" style="width:250pt"  value="<?=$c["hardware_no"]?>" readonly>
 						</td>
 					</tr>
 					<tr>
                       			<td height="25" bgcolor="white" width="30%" align="left" class="fontBblue" >&nbsp;&nbsp;Form Stock  :  </td>
                       			<td height="25" bgcolor="white" width="70%" align="left" class="fontBblue" colspan="2" >
-					  			<input type="text" name="dte_tme_entry_stock" id="dte_tme_entry_stock" readonly="readonly" value="<?=getDtetme()?>" style="width:250pt"  >
+					  			<input class="form-control"  type="text" name="dte_tme_entry_stock" id="dte_tme_entry_stock" readonly="readonly" value="<?=getDtetme()?>" style="width:250pt"  >
 						</td>
                     </tr>
 					<tr>

@@ -81,9 +81,9 @@ $(document).ready(function(){
     <tr>
         <td valign="top" align="center"> 
             <form method="post" name="form1" id="form1"> 
-				<input type="hidden" name="id" id="id"  style="width:180pt;" value="<?=$id;?>">
-				<input type="hidden" name="id_user" id="id_user"  style="width:180pt;" value="<?=$_REQUEST["id_user"];?>">
-				<input type="hidden" name="typer" id="typer"  style="width:180pt;" value="<?=$type?>">
+				<input class="form-control"  type="hidden" name="id" id="id"  style="width:180pt;" value="<?=$id;?>">
+				<input class="form-control"  type="hidden" name="id_user" id="id_user"  style="width:180pt;" value="<?=$_REQUEST["id_user"];?>">
+				<input class="form-control"  type="hidden" name="typer" id="typer"  style="width:180pt;" value="<?=$type?>">
 			
                    <table width="100%" align="center" border="0"  cellpadding="0" cellspacing="0" class="mytable">
 				   <tr>
@@ -100,12 +100,12 @@ $(document).ready(function(){
                     <tr>		 
                         <td height="20" width="30%" align="left" class="fontBblue" >Username : </td> 
                         <td height="20" width="70%" align="left" class="fontBblue" >
-						<input type="text" name="user_name" id="user_name"  style="width:180pt;" value="<?=$c["user_name"];?>"></td>   
+						<input class="form-control"  type="text" name="user_name" id="user_name"  style="width:180pt;" value="<?=$c["user_name"];?>"></td>   
                     </tr >   
                      <tr>			 
                         <td height="20" width="30%" align="left" class="fontBblue" >Password : </td> 
                         <td height="20" width="70%" align="left" class="fontBblue" >
-						<input type="password" name="password" id="password" value="<?=$c["password"]?>"  style="width:180pt;"></td>   
+						<input class="form-control"  type="password" name="password" id="password" value="<?=$c["password"]?>"  style="width:180pt;"></td>   
                     </tr > 
                      <tr>			 
                         <td height="20" width="30%" align="left" class="fontBblue" >Group. : </td> 

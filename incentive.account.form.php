@@ -89,7 +89,7 @@ $status_check = $c["status_check"];
     <tr>                                               
         <td valign="top">                                                       
             <form action="incentive.execute.php"  method="post" target="_parent"  name="form1" id="form1" onsubmit="return CheckText()"  >
-            <input type="hidden" value="<?=$id?>" name="id" id = "id">                            
+            <input class="form-control"  type="hidden" value="<?=$id?>" name="id" id = "id">                            
                 <table width="100%" cellpadding="0" cellspacing="0" class="mytable" border="0" bordercolor="#FF0000">
                     <tr>
                         <th align="center" height="40" width="100%" colspan="<?=$colspan?>" class="th">Incentive And Over Time </th>                    
@@ -105,7 +105,7 @@ $status_check = $c["status_check"];
                        <a href="#" onclick="printexpense(<?=$id?>);" ><img src="image/icon_printer.gif" alt="Print" width="20" height="18" border="0" align="right" /> </a></td>
                        <td align="left"><b> พิมพ์ </b></td>                                          
                        <td>
-                            <input name="Submit"  type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" /></td>
+                            <input class="form-control"  name="Submit"  type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" /></td>
                        <td align="left"><b>บันทึก</b></td>                       
                        <td valign="middle"><a href="incentive.ot.list.php" >
                        <img src="image/cancel.jpg" alt="Cancel" width="20" height="18" border="0" align="left" /> </a> </td>
@@ -116,35 +116,35 @@ $status_check = $c["status_check"];
                    <tr>
                       <td height="20" align="left" class="fontBblue">เลขที่  :  </td>
                       <td align="left" class="fontBblue">
-                          <input style="width:100pt;" name="other_no" type="text" id="other_no" value="<?=$c["other_no"]?>" readonly="readonly"/></td>                       
+                          <input class="form-control"  style="width:100pt;" name="other_no" type="text" id="other_no" value="<?=$c["other_no"]?>" readonly="readonly"/></td>                       
                      </tr> 
                    <tr>
                       <td height="20" align="left" class="fontBblue">วันที่  : </td>
                       <td align="left" class="fontBblue"> 
-                          <input style="width:100pt;" name="other_date" type="text" id="other_date" value="<?=$other_date?>" size="35" maxlength="10"  readonly="readonly"/>                          </td>                       
+                          <input class="form-control"  style="width:100pt;" name="other_date" type="text" id="other_date" value="<?=$other_date?>" size="35" maxlength="10"  readonly="readonly"/>                          </td>                       
                      </tr>  
                      <tr>  
                       <td align="left" class="fontBblue"><nobr>ชื่อผู้ขอเบิก : </td>
                       <td align="left" class="fontBblue">
-                        <input type="hidden" name="other_receive_id" id="other_receive_id" value="<?=$other_receive_id?>" readonly="readonly">
-                        <input type="text" name="other_receive_name" id="other_receive_name" value="<?=$other_receive_name?>" style="width:250pt;" readonly="readonly"></td>
+                        <input class="form-control"  type="hidden" name="other_receive_id" id="other_receive_id" value="<?=$other_receive_id?>" readonly="readonly">
+                        <input class="form-control"  type="text" name="other_receive_name" id="other_receive_name" value="<?=$other_receive_name?>" style="width:250pt;" readonly="readonly"></td>
                      </tr>  
                      <tr>   
                             <td align="left" class="fontBblue"><nobr>รายละเอียด  : </td>                                       
                            <td align="left" class="fontBblue">    
-                           <input style="width:400pt;" name="other_description" type="text" id="other_description" value="<?=$c["other_description"]?>"/>  </td>
+                           <input class="form-control"  style="width:400pt;" name="other_description" type="text" id="other_description" value="<?=$c["other_description"]?>"/>  </td>
                      </tr>  
                      <tr> 
                            <td align="left" class="fontBblue"><nobr> วันที่เดินทางไป  : </td>                                   
                            <td align="left" class="fontBblue"><nobr>  
-                           <input style="width:100pt;" name="other_real_godate" type="text" id="other_real_godate" value="<?=$other_real_godate?>" size="35" maxlength="10"  readonly="readonly"/>                
+                           <input class="form-control"  style="width:100pt;" name="other_real_godate" type="text" id="other_real_godate" value="<?=$other_real_godate?>" size="35" maxlength="10"  readonly="readonly"/>                
                           <a href="#" onclick="cdp1.showCalendar(this, 'other_real_godate'); return false;" > 
                           <img src="image/calendar.png" width="17" height="13" border="0" /></a></td>
                   </tr >
                   <tr> 
                            <td align="left" class="fontBblue"><nobr> วันที่เดินทางกลับ  : </td>                                     
                            <td align="left" class="fontBblue"><nobr>  
-                           <input style="width:100pt;" name="other_real_backdate" type="text" id="other_real_backdate" value="<?=$other_real_backdate?>" size="35" maxlength="10"  readonly="readonly"/>                
+                           <input class="form-control"  style="width:100pt;" name="other_real_backdate" type="text" id="other_real_backdate" value="<?=$other_real_backdate?>" size="35" maxlength="10"  readonly="readonly"/>                
                           <a href="#" onclick="cdp1.showCalendar(this, 'other_real_backdate'); return false;" > 
                           <img src="image/calendar.png" width="17" height="13" border="0" /></a></td>
                   </tr >
@@ -172,7 +172,7 @@ $status_check = $c["status_check"];
                                 <?}?>
                            </select> (คืน)                        
                         </td>
-                        <td width="15%" class="fontBblue" align="center"><input style="width:120pt;direction:rtl;" type="text" name="other_rental" value="<?=$c["other_rental"];?>" id="other_rental"></td>
+                        <td width="15%" class="fontBblue" align="center"><input class="form-control"  style="width:120pt;direction:rtl;" type="text" name="other_rental" value="<?=$c["other_rental"];?>" id="other_rental"></td>
                     </tr >
                     <tr>
                         <td width="10%" class="fontBblue" align="center">2.</td>
@@ -183,24 +183,24 @@ $status_check = $c["status_check"];
                                 <?}?>                                         
                            </select> (วัน)                        
                         </td>
-                        <td width="15%" class="fontBblue" align="center"><input type="text" readonly value="<?=$c["other_expenses_per"];?>" name="other_expenses_per" id="other_expenses_per" style="width:120pt;direction:rtl;"></td>        
+                        <td width="15%" class="fontBblue" align="center"><input class="form-control"  type="text" readonly value="<?=$c["other_expenses_per"];?>" name="other_expenses_per" id="other_expenses_per" style="width:120pt;direction:rtl;"></td>        
                     </tr >
                      <tr>
                         <td width="10%" class="fontBblue" align="center">3.</td>
                         <td width="40%" class="fontBblue" align="left">&nbsp;&nbsp;ค่าน้ำมันรถหรือแก็ส</td>
-                        <td width="15%" class="fontBblue" align="center"><input type="text" value="<?=$c["other_gas_oil"];?>" name="other_gas_oil" id="other_gas_oil" style="width:120pt;direction:rtl;"></td>               
+                        <td width="15%" class="fontBblue" align="center"><input class="form-control"  type="text" value="<?=$c["other_gas_oil"];?>" name="other_gas_oil" id="other_gas_oil" style="width:120pt;direction:rtl;"></td>               
                     </tr >
                     <tr>
                         <td width="10%" class="fontBblue" align="center">4.</td>             
                         <td width="40%" class="fontBblue" align="left">&nbsp;&nbsp;ค่าใช้จ่ายอื่นๆ 
-                           <input type="text" name="other_pay" id="other_pay" value="<?=$c["other_pay"]?>" style="width:280pt;">
+                           <input class="form-control"  type="text" name="other_pay" id="other_pay" value="<?=$c["other_pay"]?>" style="width:280pt;">
                         </td>                                                                                
-                        <td width="15%" class="fontBblue" align="center"><input type="text" name="other_pay_total" value="<?=$c["other_pay_total"];?>" id="other_pay_total" style="width:120pt;direction:rtl;"></td>       
+                        <td width="15%" class="fontBblue" align="center"><input class="form-control"  type="text" name="other_pay_total" value="<?=$c["other_pay_total"];?>" id="other_pay_total" style="width:120pt;direction:rtl;"></td>       
                     </tr >
                     <tr>
                         <td width="10%" class="fontBblue" align="center">5.</td>             
                         <td width="40%" class="fontBblue" align="left">&nbsp;&nbsp;ค่า Incentive </td>                                                                          
-                        <td width="15%" class="fontBblue" align="center"><input type="text" name="incentive_total" value="<?=$c["incentive_total"]?>" id="incentive_total" style="width:120pt;direction:rtl;" readonly></td>       
+                        <td width="15%" class="fontBblue" align="center"><input class="form-control"  type="text" name="incentive_total" value="<?=$c["incentive_total"]?>" id="incentive_total" style="width:120pt;direction:rtl;" readonly></td>       
                     </tr >
                     <tr>
                         <td width="10%" class="fontBblue" align="center">6.</td>             
@@ -216,7 +216,7 @@ $status_check = $c["status_check"];
                     </tr >
                     <tr>
                         <td width="10%" class="fontBblue" colspan="2" align="center">รวมเป็นเงินทั้งหมด</td>                                                                                 
-                        <td width="15%" class="fontBblue" align="center"><input type="text" readonly="readonly"  name="other_total" value="<?=$c["other_total"];?>" id="other_total" style="width:120pt;direction:rtl;bgcolor:red;"></td>       
+                        <td width="15%" class="fontBblue" align="center"><input class="form-control"  type="text" readonly="readonly"  name="other_total" value="<?=$c["other_total"];?>" id="other_total" style="width:120pt;direction:rtl;bgcolor:red;"></td>       
                     </tr>   
                                     
                 </table>

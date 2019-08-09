@@ -77,12 +77,12 @@ $(document).ready(function(){
     <tr>
         <td valign="top" align="center"> 
             <form method="post" name="form1" id="form1"> 
-				<input type="hidden" name="id" id="id"  style="width:180pt;" value="<?=$id;?>">
-				<input type="hidden" name="id_user" id="id_user"  style="width:180pt;" value="<?=$_REQUEST["id_user"];?>">
+				<input class="form-control"  type="hidden" name="id" id="id"  style="width:180pt;" value="<?=$id;?>">
+				<input class="form-control"  type="hidden" name="id_user" id="id_user"  style="width:180pt;" value="<?=$_REQUEST["id_user"];?>">
 			
                    <table width="100%" align="center" border="0"  cellpadding="0" cellspacing="0" class="mytable">
                     <tr>
-					  <td width="90%"  align="center"> วันที่ : <input  type="text" name="dte" id="dte" value="<? //=getDte();?>" style="width:100pt;"  />
+					  <td width="90%"  align="center"> วันที่ : <input class="form-control"   type="text" name="dte" id="dte" value="<? //=getDte();?>" style="width:100pt;"  />
 					  &nbsp; <select name="typer" id="typer" style="width:100pt;"><option value = "2">NGV</option><option value = "3">Oil</option><option value = "4">Amazon</option></select>     
 					  </td>
                        <td width="5%" ><img id="Save" name="Save" class="Save" src="image/save.jpg" align="right" width="20" height="20" /></td>

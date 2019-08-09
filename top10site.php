@@ -103,7 +103,7 @@ if($toyear==""){
 					<option value="150" <?if(150==$limits) echo "selected";?>>150</option>
 					<option value="200" <?if(200==$limits) echo "selected";?>>200</option>
 					<option value="300" <?if(300==$limits) echo "selected";?>>300</option>
-				</select>&nbsp;&nbsp;<input type="button" value="Search" onclick="Search_Click(limits.value,fmmnt.value,fmyear.value,tomnt.value,toyear.value)"></td>
+				</select>&nbsp;&nbsp;<input class="form-control"  type="button" value="Search" onclick="Search_Click(limits.value,fmmnt.value,fmyear.value,tomnt.value,toyear.value)"></td>
 	</tr>	    
 	<tr>
                         <th align="center" height="40" class="th">#</th> 

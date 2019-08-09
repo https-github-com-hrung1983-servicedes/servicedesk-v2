@@ -98,8 +98,8 @@ Where tbl_site286.responsibility = 'MSI'";
                                 <option value = "site_name" <? if($schBy=="site_name") echo "selected";?> >Site Name</option>
                                <?php ?>         
                             </select>                                      
-                            <input type="text" name="schTxt" id="schTxt" value="<?=$schTxt ?>">    
-                            &nbsp;<input  type="button" name="sch" value="Search"  onclick="Search_Click(schby.value,schTxt.value)" style="width:50pt;">
+                            <input class="form-control"  type="text" name="schTxt" id="schTxt" value="<?=$schTxt ?>">    
+                            &nbsp;<input class="form-control"   type="button" name="sch" value="Search"  onclick="Search_Click(schby.value,schTxt.value)" style="width:50pt;">
                         </td>
 		  
 <?

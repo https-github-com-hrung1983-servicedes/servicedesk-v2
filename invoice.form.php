@@ -69,7 +69,7 @@ if ($type == "add") {
     <tr>                                               
         <td valign="top">                                                       
             <form action="invoice.execute.php"  method="post"  name="form1" id="form1"  >
-            <input type="hidden" value="<?=$id?>" name="id" id = "id">                            
+            <input class="form-control"  type="hidden" value="<?=$id?>" name="id" id = "id">                            
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="mytable" border="1" bordercolor="#FF0000">
                     <tr>
                         <th align="center" height="40" width="100%" colspan="6" class="th">INVOICE</th>                    
@@ -77,7 +77,7 @@ if ($type == "add") {
                     
                     <tr>
                            <td width="95%" colspan="2">&nbsp;</td>
-                        <td><input name="Submit"  type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
+                        <td><input class="form-control"  name="Submit"  type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
                        <td align="left"><b>บันทึก</b>    </td>
                        <td><a href="javascript:history.back(1)" ><img src="image/cancel.jpg" alt="Cancel" width="20" height="18" border="0" align="left" /> </a> </td>
                        <td align="left"><nobr><b> ยกเลิก</b>     </td>
@@ -88,15 +88,15 @@ if ($type == "add") {
                    <tr>
                       <td height="20" align="left" class="fontBblue" >ลูกค้า :  </td>  
                       <td align="left" class="fontBblue"><nobr>
-                      <input type="hidden" name="customer_id" id="customer_id" value="">                   
-                      <input type="text" name="customer_idx" id="customer_idx" value="" onclick="javascript:getCustomer('customer_id',customer_id.value)" style="width:100pt;">
-                      <input type="text" name="customer_name" id="customer_name" value="" style="width:250pt;" readonly="readonly"></td>
+                      <input class="form-control"  type="hidden" name="customer_id" id="customer_id" value="">                   
+                      <input class="form-control"  type="text" name="customer_idx" id="customer_idx" value="" onclick="javascript:getCustomer('customer_id',customer_id.value)" style="width:100pt;">
+                      <input class="form-control"  type="text" name="customer_name" id="customer_name" value="" style="width:250pt;" readonly="readonly"></td>
                       <td align="left" class="fontBblue"><nobr>&nbsp;&nbsp;&nbsp;เลขที่  : </td>                                       
                            <td align="left" class="fontBblue"  colspan="5">    
-                           <input style="width:100pt;" name="no" type="text" id="no" value="<??>" size="35" maxlength="10"/></td>
+                           <input class="form-control"  style="width:100pt;" name="no" type="text" id="no" value="<??>" size="35" maxlength="10"/></td>
                        <td align="left" class="fontBblue"><nobr>&nbsp;&nbsp;&nbsp; วันเวลาที่เปิดงาน  : </td>                                       
                            <td align="left" class="fontBblue">  <nobr>  
-                           <input style="width:100pt;" name="open_date" type="text" id="open_date" value="<?=$open_date?>" size="35" maxlength="10"  readonly="readonly"/>
+                           <input class="form-control"  style="width:100pt;" name="open_date" type="text" id="open_date" value="<?=$open_date?>" size="35" maxlength="10"  readonly="readonly"/>
                           <a href="#" onclick="cdp1.showCalendar(this, 'open_date'); return false;" > 
                           <img src="image/calendar.png" width="17" height="13" border="0" /></a></td>
                   </tr >

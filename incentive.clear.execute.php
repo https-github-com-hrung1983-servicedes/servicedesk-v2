@@ -114,7 +114,7 @@ if(!checkUser()){    echo Message(35,"red",$titel1,$msg1,"<a href='index.php'> $
              $sql_check = "update tbl_incentive_ot set status_check = 's' ,authen_by = '1' where id = $id";
              mysqli_query($conn,$sql_check);
 	 } else { 
-	    echo "<center><input type='button' value='Back' style='width:130pt;' onclick='history.back();'></center>";
+	    echo "<center><input class="form-control"  type='button' value='Back' style='width:130pt;' onclick='history.back();'></center>";
 	 } 
 
 }

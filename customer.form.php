@@ -46,7 +46,7 @@ if ($type == "edit") {
     <tr>                                               
         <td valign="top">                                                       
             <form action="customer.execute.php"  method="post"  name="form1" id="form1"  >  
-            <input type="hidden" name="customer_id" id="customer_id" value="<?=$c["customer_id"];?>" style="width:100pt" readonly="readonly">                                 
+            <input class="form-control"  type="hidden" name="customer_id" id="customer_id" value="<?=$c["customer_id"];?>" style="width:100pt" readonly="readonly">                                 
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="mytable" border="1" bordercolor="#FF0000">
                     <tr>
                         <th align="center" height="40" width="100%" colspan="6" class="th">Cusotmer</th>                    
@@ -54,7 +54,7 @@ if ($type == "edit") {
                     
                     <tr>
                            <td width="95%" colspan="2">&nbsp;</td>
-                        <td><input name="Submit"  type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
+                        <td><input class="form-control"  name="Submit"  type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
                        <td align="left"><b>บันทึก</b>    </td>
                        <td><a href="javascript:history.back(1)" ><img src="image/cancel.jpg" alt="Cancel" width="20" height="18" border="0" align="left" /> </a> </td>
                        <td align="left"><nobr><b> ยกเลิก</b>     </td>
@@ -65,27 +65,27 @@ if ($type == "edit") {
                     <tr>
                       <td width="20%" height="20" align="left" class="fontBblue" >รหัสลูกค้า :  </td>  
                       <td width="80%" align="left" class="fontBblue" colspan="4">                   
-                      <input type="text" name="customer_idx" id="customer_idx" value="<?=formatNum($c["customer_id"],3);?>" style="width:100pt" readonly="readonly"></td>          
+                      <input class="form-control"  type="text" name="customer_idx" id="customer_idx" value="<?=formatNum($c["customer_id"],3);?>" style="width:100pt" readonly="readonly"></td>          
                   </tr >
                    <tr>
                       <td width="20%" height="20" align="left" class="fontBblue" >ชื่อลูกค้า :  </td>  
                       <td width="80%" align="left" class="fontBblue" colspan="4">                   
-                      <input type="text" name="customer_name" id="customer_name" value="<?=$c["customer_name"];?>" style="width:550pt"></td>          
+                      <input class="form-control"  type="text" name="customer_name" id="customer_name" value="<?=$c["customer_name"];?>" style="width:550pt"></td>          
                   </tr >
                     
                     <tr>
                       <td height="20%" align="left" class="fontBblue" ><nobr>ชื่อผู้ติดต่อ :</td>
                       <td height="30%" align="left" class="fontBblue"> 
-                      <input type="text" name="customer_contact" id="customer_contact" value="<?=$c["customer_contact"];?>" style="width:226pt" /></td>
+                      <input class="form-control"  type="text" name="customer_contact" id="customer_contact" value="<?=$c["customer_contact"];?>" style="width:226pt" /></td>
                       <td height="20%" align="left" class="fontBblue"><nobr>  เบอร์โทรศัพท์  :</td>
                       <td height="30%" align="left" class="fontBblue" >
-                      <input type="text" name="customer_tel" id="customer_tel" value="<?=$c["customer_tel"];?>"  style="width:200pt" /></td>
+                      <input class="form-control"  type="text" name="customer_tel" id="customer_tel" value="<?=$c["customer_tel"];?>"  style="width:200pt" /></td>
                     </tr>
                     
                     <tr>
                       <td height="20%" align="left" class="fontBblue" ><nobr>ที่อยู่  :</td>
                       <td height="80%" align="left" class="fontBblue" colspan="4">
-                      <input type="text" name="customer_address" value="<?=$c["customer_address"];?>" id="customer_address"  style="width:550pt" /></td>
+                      <input class="form-control"  type="text" name="customer_address" value="<?=$c["customer_address"];?>" id="customer_address"  style="width:550pt" /></td>
                     </tr>  
                     
                 </table>  

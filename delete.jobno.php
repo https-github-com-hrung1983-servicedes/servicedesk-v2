@@ -54,10 +54,10 @@ Where tbl_log_call_center.job_no = '$schtxt'";
                           
                             
                             <b>&nbsp;วันที่  :</b>      
-                            <input style="width:60pt;" name="date_end"  type="text" id="schtxt" value="" size="35" maxlength="10" />
+                            <input class="form-control"  style="width:60pt;" name="date_end"  type="text" id="schtxt" value="" size="35" maxlength="10" />
                             
                             
-                            &nbsp;<input  type="button" name="sch" value="ค้นหา"  onclick="Search_Click(schtxt.value)"style="width:50pt;">
+                            &nbsp;<input class="form-control"   type="button" name="sch" value="ค้นหา"  onclick="Search_Click(schtxt.value)"style="width:50pt;">
                            
                         </td>
 		<td width="18" valign="middle"><a href="bsslogcall.form.php?type=add" target="_parent">

@@ -44,7 +44,7 @@ include("header.php");
     <tr>                                               
         <td valign="top">                                                       
             <form action="jobtype.execute.php"  method="post"  name="form1" target="mainPage" id="form1"  >
-            <input type="hidden" value="<?=$c["category_id"]?>" name="category_id" id = "category_id">                             
+            <input class="form-control"  type="hidden" value="<?=$c["category_id"]?>" name="category_id" id = "category_id">                             
                 <table width="100%" border="0" cellpadding="0" cellspacing="0" class="mytable" bordercolor="#FF0000">
                     <tr>
                         <th align="center" height="40" width="100%" colspan="6" class="th">Job Type</th>                    
@@ -52,7 +52,7 @@ include("header.php");
                     
                     <tr>
                         <td width="95%" colspan="2">&nbsp;</td>
-                        <td><input name="Submit"  type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
+                        <td><input class="form-control"  name="Submit"  type="image" onclick=" return CheckText()"  src="image/save.jpg" alt="Save" align="right" width="20" height="20" />    </td>
                        <td align="left"><b>บันทึก</b>    </td>
                        <td><a href="javascript:history.back(1)" target="mainPage" ><img src="image/cancel.jpg" alt="Cancel" width="20" height="18" border="0" align="left" /> </a> </td>
                        <td align="left"><nobr><b> ยกเลิก</b>     </td>
@@ -74,18 +74,18 @@ include("header.php");
                                                   
                    <tr>                                       
                       <td height="25%" align="left" class="fontBblue"><nobr>Category Type  :</td>
-                      <td height="25%" align="left" class="fontBblue" colspan="5"><input type="text" name="category_type" id="category_type" value="<?=$c["category_type"];?>"  style="width:560pt" /></td>
+                      <td height="25%" align="left" class="fontBblue" colspan="5"><input class="form-control"  type="text" name="category_type" id="category_type" value="<?=$c["category_type"];?>"  style="width:560pt" /></td>
                     </tr>
                     
                     <tr> 
                       <td height="25%" align="left" class="fontBblue"><nobr>   Fixed Description  :</td>
-                      <td height="25%" align="left" class="fontBblue" colspan="5"><input type="text" name="fixed_description" id="fixed_description" value="<?=$c["fixed_description"];?>"  style="width:560pt" /></td>
+                      <td height="25%" align="left" class="fontBblue" colspan="5"><input class="form-control"  type="text" name="fixed_description" id="fixed_description" value="<?=$c["fixed_description"];?>"  style="width:560pt" /></td>
                     </tr>
                     
                     <tr>
                       <td height="20" align="left" class="fontBblue" ><nobr>Comment  :</td>
                       <td height="20" align="left" class="fontBblue"><nobr>
-                        <input name="commente" id="commente" type="text" value="<?=$c["commente"];?>">
+                        <input class="form-control"  name="commente" id="commente" type="text" value="<?=$c["commente"];?>">
                  </tr>
                         
                 </table>
